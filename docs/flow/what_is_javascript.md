@@ -25,3 +25,5 @@ square("2");
 ```
 
 また flow は少しずつ適用することもでき、いつでも取り除くことができます。なので flow がどのように動くのかを見て見ましょう。
+
+next [](https://flow.org/en/docs/install/)
