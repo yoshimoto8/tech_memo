@@ -822,6 +822,68 @@ rid は、**get rid of**でよく使われるようです(形容詞ではない�
 | Bikeshed, Bikeshedding | 自転車置き場 | 重要でない議論に時間を取られること（家のペンキを塗り終える前に自転車置き場を何色で塗るか揉めることから）                                                                                                                                                        |
 | Yak shaving            | ヤクの毛刈り | ある大きな問題を解決するために、 一見無関係な小さい問題をいくつも片付けること。転じて、大きな問題を解決するつもりが、一見関係しているように見えて実は無用な小さい問題に気を取られること（長く固いヤクの毛を刈ってウールにするには多くの下準備が必要なことから） |
 
+## コミットメッセージを書く
+
+| Japanese                                         | English                           |
+| :----------------------------------------------- | :-------------------------------- |
+| A を実装しました                                 | Implement A                       |
+| 機能(クラス)B に A を実装しました                | Add A to B                        |
+| 機能(クラス)B の A をリファクタリングしました    | Refactor A in B                   |
+| A を B から C に変更しました                     | Change A from B to C              |
+| A でなく B を使うようにしました                  | Replace A with B                  |
+| 機能(クラス)A のテストを追加しました             | Add test for A                    |
+| 機能(クラス)A の失敗していたテストを修正しました | Fix broken A tests                |
+| 依存ライブラリ A をバージョン x.y.z に上げました | Update A to x.y.z                 |
+| ファイル A 中の誤字を修正しました                | Fix typo in A                     |
+| 〜のとき〜するバグを修正しました                 | Fix the problem where 〜 when 〜  |
+| 機能(クラス)A について、B にも対応しました       | Support B in A                    |
+| ドキュメント A の B に関する記述を修正しました   | Improve B in A                    |
+| A で発生するエラーメッセージを見直しました       | Improve error message thrown in A |
+| バージョン x.y.z をリリースしました              | Release x.y.z                     |
+
+### 本当は避けたほうが良いが、細かい修正をまとめてコミットするときのコメント用例
+
+| Japanese                                             | English             |
+| :--------------------------------------------------- | :------------------ |
+| 依存ライブラリのバージョンを諸々更新しました         | Update dependencies |
+| 雑多なコードフォーマット修正・可視性の修正をしました | Polish              |
+| コンパイル・静的解析の警告を出ないように修正しました | Clean up            |
+
+## 問い合わせる
+
+| Japanese                                          | English                                |
+| :------------------------------------------------ | :------------------------------------- |
+| 〜する予定はありますか?                           | Do you have any plans to 〜 ?          |
+| (このプロダクトを使って)〜することはできますか?   | Is there any way                       |
+| 回避策ありませんか?                               | Is there a workaround?                 |
+| ～してないのって、何か理由ありますか?             | What is the reason for not ～?         |
+| 設定/実装例がほしいです                           | Could you provide an example please?   |
+| どうぞよろしくお願いします                        | Thanks in advance.                     |
+| 〜すると NullPointerException がでます            | We get NPE when 〜                     |
+| このドキュメントを日本語に翻訳してもいいですか?   | Can I translate the docs to Japanese?  |
+| クローズしちゃっていいですか?                     | Can I close this?                      |
+| バージョン x.y.z でも、まだこのバグ潰れてないです | I still encounter this bug with x.y.z. |
+
+## 問合せに答える
+
+| Japanese                        | English                                                     |
+| :------------------------------ | :---------------------------------------------------------- |
+| 再現できないですねぇ…           | I'm afraid I can't reproduce the error you're seeing.       |
+| もうちょっと情報ください        | You'll need to provide a little more information than that. |
+| スタックトレースはありませんか? | Could you provide a stack trace?                            |
+| そこがまさに問題なんです        | That's exactly the problem.                                 |
+
+## お礼をいう
+
+| Japanese                                     | English                                                                         |
+| :------------------------------------------- | :------------------------------------------------------------------------------ |
+| とても勉強になりました                       | I think I've learned a lot.                                                     |
+| オッ、分かりました!                          | I see now.                                                                      |
+| フィードバックありがとう                     | Thanks for the feedback.                                                        |
+| 何か他にもありましたら、よろしくお願いします | You're more than welcome to contribute.                                         |
+| もし解決できたら、プルリク送ってください     | If you are able to resolve this, we would encourage you to send a pull request. |
+| ちゃんと動きました!                          | It's working as expected.                                                       |
+
 ## 引用元
 
 - [Changelog のための英文テンプレート集 - ぴょぴょぴょ？ - Linux とかプログラミングの覚え書き -](http://d.hatena.ne.jp/pyopyopyo/20070920)
@@ -837,3 +899,4 @@ rid は、**get rid of**でよく使われるようです(形容詞ではない�
 - [Awesome Commit English](https://github.com/azu/awesome-commit-english)
 - [Abbreviations.com - Computing Abbreviations](http://www.abbreviations.com/category/COMPUTING)
 - [Acronym Finder](http://www.acronymfinder.com)
+- [GitHub English Challenge Cheat Sheet](https://qiita.com/kawasima/items/feac49a299213e2c8ba6)
