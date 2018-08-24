@@ -1,3 +1,8 @@
+---
+search:
+  keywords: ["github", "commit", "etc."]
+---
+
 ## 単語
 
 | 単語                                                 | 意味                                                                                                       |
