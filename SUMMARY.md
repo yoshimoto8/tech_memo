@@ -3,6 +3,7 @@
 
 - [2018-08]()
     - [2018 年 08 月 25 日](diary/2018-08/25.md)
+- [book.md](diary/book.md)
 - [mind]()
     - [何のためにこの記事を書くか？](diary/mind/never_forget_mind.md)
 
@@ -35,8 +36,18 @@
     - [マークダウン表](docs/Markdown/markdown2.md)
 - [Rails]()
     - [Railsの記事まとめ](docs/Rails/matomeru.md)
+    - [refactoring]()
+        - [デメテルの法則を違反したコード](docs/Rails/refactoring/Derimeru_violation.md)
+        - [ダックタイピングを活かしていないコード](docs/Rails/refactoring/Duck_typing.md)
+        - [見通しが悪いコールバック](docs/Rails/refactoring/bad_readable_callback.md)
+        - [Viewを知りすぎたDecoratorクラス](docs/Rails/refactoring/decorator_class.md)
+        - [FatView, FatController, FatModel](docs/Rails/refactoring/fat.md)
+        - [ビジネスロジックの詰まったFormクラス -> Serviceクラスの活用](docs/Rails/refactoring/form_service_class.md)
+        - [依存を含んだクラス](docs/Rails/refactoring/include_dependency_class.md)
 - [Ruby]()
     - [Ruby文法](docs/Ruby/1.md)
 - [SQL]()
 - [Tech_Term]()
     - [IT単語](docs/Tech_Term/tech_term1.md)
+
+## scripts
