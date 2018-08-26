@@ -1,3 +1,5 @@
+# IT単語
+
 ## シンボリックリンク (symbolic link)
 
 シンボリックリンク (symbolic link)とは

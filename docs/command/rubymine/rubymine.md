@@ -1,4 +1,4 @@
-# エディタ
+# エディタまとめ記事
 
 - [【翻訳】絶対見逃せない！RubyMine のショートカット 10 選](https://qiita.com/jnchito/items/6eda2cd54038ffa829ef)
 

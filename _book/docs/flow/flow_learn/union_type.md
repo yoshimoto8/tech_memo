@@ -1,3 +1,5 @@
+# Union Typeを極める
+
 ## union type
 
 union type は if 文を使って条件分岐をしないといけない。

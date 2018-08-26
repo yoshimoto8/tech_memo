@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Herokuにgitbookをデプロイする · GitBook</title>
+        <title>shortcutkey.md · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,6 +57,8 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    
+    <link rel="prev" href="rubymine.html" />
     
 
     </head>
@@ -257,9 +259,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="2.2.1.1" data-path="1.html">
+        <li class="chapter " data-level="2.2.1.1" data-path="../gitbook/1.html">
             
-                <a href="1.html">
+                <a href="../gitbook/1.html">
             
                     
                     Herokuにgitbookをデプロイする
@@ -353,9 +355,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.2.4.1" data-path="../rubymine/rubymine.html">
+        <li class="chapter " data-level="2.2.4.1" data-path="rubymine.html">
             
-                <a href="../rubymine/rubymine.html">
+                <a href="rubymine.html">
             
                     
                     エディタ
@@ -366,9 +368,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.4.2" data-path="../rubymine/shortcutkey.html">
+        <li class="chapter active" data-level="2.2.4.2" data-path="shortcutkey.html">
             
-                <a href="../rubymine/shortcutkey.html">
+                <a href="shortcutkey.html">
             
                     
                     shortcutkey.md
@@ -727,7 +729,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >Herokuにgitbookをデプロイする</a>
+        <a href="../../.." >shortcutkey.md</a>
     </h1>
 </div>
 
@@ -742,32 +744,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="heroku&#x306B;gitbook&#x3092;&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x3059;&#x308B;">Heroku&#x306B;gitbook&#x3092;&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x3059;&#x308B;</h1>
-<h3 id="express&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">express&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</h3>
-<pre><code class="lang-javascript">yarn add express
-</code></pre>
-<h3 id="indexjs&#x3092;&#x4F5C;&#x6210;">index.js&#x3092;&#x4F5C;&#x6210;</h3>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
-<span class="hljs-keyword">var</span> app = express();
-app.use(express.static(__dirname + <span class="hljs-string">&apos;/_book&apos;</span>));
+                                <h1 id="rubymine&#x306E;&#x30B7;&#x30E7;&#x30FC;&#x30C8;&#x30AB;&#x30C3;&#x30C8;&#x30AD;&#x30FC;&#x4E00;&#x89A7;">RubyMine&#x306E;&#x30B7;&#x30E7;&#x30FC;&#x30C8;&#x30AB;&#x30C3;&#x30C8;&#x30AD;&#x30FC;&#x4E00;&#x89A7;</h1>
 
-app.listen(process.env.PORT || <span class="hljs-number">3000</span>);
-</code></pre>
-<h3 id="procfile">Procfile</h3>
-<p>Procfile&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;&#x6B21;&#x306E;&#x5185;&#x5BB9;&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;&#x4FDD;&#x5B58;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<pre><code>web: node index.js
-</code></pre><h3 id="heroku&#x306B;&#x30ED;&#x30B0;&#x30A4;&#x30F3;">Heroku&#x306B;&#x30ED;&#x30B0;&#x30A4;&#x30F3;</h3>
-<pre><code>heroku login
-</code></pre><h3 id="heroku&#x306B;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x4F5C;&#x6210;">heroku&#x306B;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x4F5C;&#x6210;</h3>
-<pre><code>heroku create demo
-</code></pre><h3 id="heroku&#x306B;&#x30D7;&#x30C3;&#x30B7;&#x30E5;">Heroku&#x306B;&#x30D7;&#x30C3;&#x30B7;&#x30E5;</h3>
-<pre><code>$ git init
-$ git add .
-$ git commit -m &apos;demo&apos;
-$ git push heroku master
-</code></pre><h3 id="&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x3067;&#x78BA;&#x8A8D;">&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x3067;&#x78BA;&#x8A8D;</h3>
-<pre><code>heroku open
-</code></pre>
                                 
                                 </section>
                             
@@ -794,6 +772,10 @@ $ git push heroku master
 
             
                 
+                <a href="rubymine.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: エディタ">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
                 
             
         
@@ -802,7 +784,7 @@ $ git push heroku master
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Herokuにgitbookをデプロイする","level":"2.2.1.1","depth":3,"next":{"title":"github","level":"2.2.2","depth":2,"ref":"","articles":[{"title":"変更を取り消す","level":"2.2.2.1","depth":3,"path":"docs/command/github/1.md","ref":"docs/command/github/1.md","articles":[]}]},"previous":{"title":"gitbook","level":"2.2.1","depth":2,"ref":"","articles":[{"title":"Herokuにgitbookをデプロイする","level":"2.2.1.1","depth":3,"path":"docs/command/gitbook/1.md","ref":"docs/command/gitbook/1.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","summary"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"summary":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"docs/command/gitbook/1.md","mtime":"2018-08-26T03:50:29.361Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-26T04:27:46.572Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"shortcutkey.md","level":"2.2.4.2","depth":3,"next":{"title":"english","level":"2.3","depth":1,"ref":"","articles":[{"title":"単語","level":"2.3.1","depth":2,"path":"docs/english/git_commit.md","ref":"docs/english/git_commit.md","articles":[]},{"title":"githubでよく使われる単語","level":"2.3.2","depth":2,"path":"docs/english/github_vocabulary.md","ref":"docs/english/github_vocabulary.md","articles":[]}]},"previous":{"title":"エディタ","level":"2.2.4.1","depth":3,"path":"docs/command/rubymine/rubymine.md","ref":"docs/command/rubymine/rubymine.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","summary"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"summary":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"docs/command/rubymine/shortcutkey.md","mtime":"2018-08-26T04:27:05.670Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-26T04:27:46.572Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

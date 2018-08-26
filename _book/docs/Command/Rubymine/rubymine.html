@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Herokuにgitbookをデプロイする · GitBook</title>
+        <title>エディタ · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -56,6 +56,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
+    
+    <link rel="next" href="shortcutkey.html" />
     
     
 
@@ -257,9 +259,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="2.2.1.1" data-path="1.html">
+        <li class="chapter " data-level="2.2.1.1" data-path="../gitbook/1.html">
             
-                <a href="1.html">
+                <a href="../gitbook/1.html">
             
                     
                     Herokuにgitbookをデプロイする
@@ -353,9 +355,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.2.4.1" data-path="../rubymine/rubymine.html">
+        <li class="chapter active" data-level="2.2.4.1" data-path="rubymine.html">
             
-                <a href="../rubymine/rubymine.html">
+                <a href="rubymine.html">
             
                     
                     エディタ
@@ -366,9 +368,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.4.2" data-path="../rubymine/shortcutkey.html">
+        <li class="chapter " data-level="2.2.4.2" data-path="shortcutkey.html">
             
-                <a href="../rubymine/shortcutkey.html">
+                <a href="shortcutkey.html">
             
                     
                     shortcutkey.md
@@ -727,7 +729,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >Herokuにgitbookをデプロイする</a>
+        <a href="../../.." >エディタ</a>
     </h1>
 </div>
 
@@ -742,32 +744,26 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="heroku&#x306B;gitbook&#x3092;&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x3059;&#x308B;">Heroku&#x306B;gitbook&#x3092;&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x3059;&#x308B;</h1>
-<h3 id="express&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">express&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</h3>
-<pre><code class="lang-javascript">yarn add express
-</code></pre>
-<h3 id="indexjs&#x3092;&#x4F5C;&#x6210;">index.js&#x3092;&#x4F5C;&#x6210;</h3>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
-<span class="hljs-keyword">var</span> app = express();
-app.use(express.static(__dirname + <span class="hljs-string">&apos;/_book&apos;</span>));
+                                <h1 id="&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x307E;&#x3068;&#x3081;&#x8A18;&#x4E8B;">&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x307E;&#x3068;&#x3081;&#x8A18;&#x4E8B;</h1>
+<ul>
+<li><p><a href="https://qiita.com/jnchito/items/6eda2cd54038ffa829ef" target="_blank">&#x3010;&#x7FFB;&#x8A33;&#x3011;&#x7D76;&#x5BFE;&#x898B;&#x9003;&#x305B;&#x306A;&#x3044;&#xFF01;RubyMine &#x306E;&#x30B7;&#x30E7;&#x30FC;&#x30C8;&#x30AB;&#x30C3;&#x30C8; 10 &#x9078;</a></p>
+</li>
+<li><p><a href="https://qiita.com/jnchito/items/bcb2bb5311a44113fdd9" target="_blank">RubyMine &#x306E;&#x30B3;&#x30FC;&#x30C9;&#x30B8;&#x30E3;&#x30F3;&#x30D7;&#x6A5F;&#x80FD;&#x306F;&#x672C;&#x5F53;&#x306B;&#x3059;&#x3054;&#x3044;&#xFF01;&#xFF01;&#x56F0;&#x3063;&#x305F;&#x3068;&#x304D;&#x306F; Command+B &#x3092;&#x62BC;&#x3059;&#x3079;&#x3057;&#xFF01;</a></p>
+</li>
+<li><p><a href="https://qiita.com/jnchito/items/0ad568263f3419775d33" target="_blank">&#x3010;Ruby &#x521D;&#x5FC3;&#x8005;&#x5411;&#x3051;&#x3011;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x3001;&#x3061;&#x3083;&#x3093;&#x3068;&#x8A2D;&#x5B9A;&#x3067;&#x304D;&#x3066;&#x308B;&#xFF1F;&#x4F7F;&#x3044;&#x3053;&#x306A;&#x305B;&#x3066;&#x308B;&#xFF1F;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x30EA;&#x30B9;&#x30C8; 10 &#x9805;&#x76EE;</a></p>
+</li>
+<li><a href="https://qiita.com/ruzia/items/2edd8d45c16ac2c70dd7" target="_blank">RubyMine &#x304C;&#x6C17;&#x306B;&#x306A;&#x308B;&#x4EBA;&#x306B;&#x6367;&#x3050;&#x3001;&#x3056;&#x3063;&#x304F;&#x308A;&#x5165;&#x9580;&#x7DE8;</a></li>
+<li><a href="https://qiita.com/kiyodori/items/5ba3748e07bcc7e0a6c8" target="_blank">RubyMine &#x306E;&#x8A2D;&#x5B9A;&#x30FB;&#x4F7F;&#x3044;&#x65B9;</a></li>
+<li><p><a href="https://qiita.com/norikt/items/bd15774537dc51f160bc" target="_blank">RubyMine &#x3068; RuboCop &#x3092;&#x9023;&#x643A;&#x3055;&#x305B;&#x308B;</a></p>
+</li>
+<li><p><a href="&#x500B;&#x4EBA;&#x7684;&#x306B;&#x3088;&#x304F;&#x4F7F;&#x3046;&#x3001;RubyMine&#x306E;&#x30B7;&#x30E7;&#x30FC;&#x30C8;&#x30AB;&#x30C3;&#x30C8;&#x3044;&#x304F;&#x3064;&#x304B;">https://qiita.com/mnuma/items/1c0e4c54b070e0a2307b</a></p>
+</li>
+</ul>
+<h2 id="rubymine-&#x3053;&#x308C;&#x3060;&#x3051;&#x898B;&#x308C;&#x3070;&#x5B8C;&#x74A7;">rubyMine &#x3053;&#x308C;&#x3060;&#x3051;&#x898B;&#x308C;&#x3070;&#x5B8C;&#x74A7;</h2>
+<ul>
+<li><a href="https://qiita.com/advent-calendar/2014/rubymine" target="_blank">RubyMine Advent Calendar 2014</a></li>
+</ul>
 
-app.listen(process.env.PORT || <span class="hljs-number">3000</span>);
-</code></pre>
-<h3 id="procfile">Procfile</h3>
-<p>Procfile&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;&#x6B21;&#x306E;&#x5185;&#x5BB9;&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;&#x4FDD;&#x5B58;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<pre><code>web: node index.js
-</code></pre><h3 id="heroku&#x306B;&#x30ED;&#x30B0;&#x30A4;&#x30F3;">Heroku&#x306B;&#x30ED;&#x30B0;&#x30A4;&#x30F3;</h3>
-<pre><code>heroku login
-</code></pre><h3 id="heroku&#x306B;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x4F5C;&#x6210;">heroku&#x306B;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x4F5C;&#x6210;</h3>
-<pre><code>heroku create demo
-</code></pre><h3 id="heroku&#x306B;&#x30D7;&#x30C3;&#x30B7;&#x30E5;">Heroku&#x306B;&#x30D7;&#x30C3;&#x30B7;&#x30E5;</h3>
-<pre><code>$ git init
-$ git add .
-$ git commit -m &apos;demo&apos;
-$ git push heroku master
-</code></pre><h3 id="&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x3067;&#x78BA;&#x8A8D;">&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x3067;&#x78BA;&#x8A8D;</h3>
-<pre><code>heroku open
-</code></pre>
                                 
                                 </section>
                             
@@ -795,6 +791,10 @@ $ git push heroku master
             
                 
                 
+                <a href="shortcutkey.html" class="navigation navigation-next navigation-unique" aria-label="Next page: shortcutkey.md">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
             
         
     </div>
@@ -802,7 +802,7 @@ $ git push heroku master
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Herokuにgitbookをデプロイする","level":"2.2.1.1","depth":3,"next":{"title":"github","level":"2.2.2","depth":2,"ref":"","articles":[{"title":"変更を取り消す","level":"2.2.2.1","depth":3,"path":"docs/command/github/1.md","ref":"docs/command/github/1.md","articles":[]}]},"previous":{"title":"gitbook","level":"2.2.1","depth":2,"ref":"","articles":[{"title":"Herokuにgitbookをデプロイする","level":"2.2.1.1","depth":3,"path":"docs/command/gitbook/1.md","ref":"docs/command/gitbook/1.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","summary"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"summary":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"docs/command/gitbook/1.md","mtime":"2018-08-26T03:50:29.361Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-26T04:27:46.572Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"エディタ","level":"2.2.4.1","depth":3,"next":{"title":"shortcutkey.md","level":"2.2.4.2","depth":3,"path":"docs/command/rubymine/shortcutkey.md","ref":"docs/command/rubymine/shortcutkey.md","articles":[]},"previous":{"title":"rubymine","level":"2.2.4","depth":2,"ref":"","articles":[{"title":"エディタ","level":"2.2.4.1","depth":3,"path":"docs/command/rubymine/rubymine.md","ref":"docs/command/rubymine/rubymine.md","articles":[]},{"title":"shortcutkey.md","level":"2.2.4.2","depth":3,"path":"docs/command/rubymine/shortcutkey.md","ref":"docs/command/rubymine/shortcutkey.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","summary"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"summary":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"docs/command/rubymine/rubymine.md","mtime":"2018-08-26T04:26:51.422Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-26T04:27:46.572Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

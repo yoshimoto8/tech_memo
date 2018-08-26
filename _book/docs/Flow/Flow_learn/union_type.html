@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Herokuにgitbookをデプロイする · GitBook</title>
+        <title>union type · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -257,9 +257,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="2.2.1.1" data-path="1.html">
+        <li class="chapter " data-level="2.2.1.1" data-path="../../command/gitbook/1.html">
             
-                <a href="1.html">
+                <a href="../../command/gitbook/1.html">
             
                     
                     Herokuにgitbookをデプロイする
@@ -289,9 +289,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.2.2.1" data-path="../github/1.html">
+        <li class="chapter " data-level="2.2.2.1" data-path="../../command/github/1.html">
             
-                <a href="../github/1.html">
+                <a href="../../command/github/1.html">
             
                     
                     変更を取り消す
@@ -321,7 +321,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.2.3.1" data-path="../heroku/1.md">
+        <li class="chapter " data-level="2.2.3.1" data-path="../../command/heroku/1.md">
             
                 <span>
             
@@ -353,9 +353,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.2.4.1" data-path="../rubymine/rubymine.html">
+        <li class="chapter " data-level="2.2.4.1" data-path="../../command/rubymine/rubymine.html">
             
-                <a href="../rubymine/rubymine.html">
+                <a href="../../command/rubymine/rubymine.html">
             
                     
                     エディタ
@@ -366,9 +366,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.4.2" data-path="../rubymine/shortcutkey.html">
+        <li class="chapter " data-level="2.2.4.2" data-path="../../command/rubymine/shortcutkey.html">
             
-                <a href="../rubymine/shortcutkey.html">
+                <a href="../../command/rubymine/shortcutkey.html">
             
                     
                     shortcutkey.md
@@ -462,9 +462,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.4.1.1" data-path="../../flow/flow_document/what_is_javascript.html">
+        <li class="chapter " data-level="2.4.1.1" data-path="../flow_document/what_is_javascript.html">
             
-                <a href="../../flow/flow_document/what_is_javascript.html">
+                <a href="../flow_document/what_is_javascript.html">
             
                     
                     flow の説明
@@ -494,9 +494,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.4.2.1" data-path="../../flow/flow_learn/union_type.html">
+        <li class="chapter active" data-level="2.4.2.1" data-path="union_type.html">
             
-                <a href="../../flow/flow_learn/union_type.html">
+                <a href="union_type.html">
             
                     
                     union type
@@ -727,7 +727,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >Herokuにgitbookをデプロイする</a>
+        <a href="../../.." >union type</a>
     </h1>
 </div>
 
@@ -742,32 +742,20 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="heroku&#x306B;gitbook&#x3092;&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x3059;&#x308B;">Heroku&#x306B;gitbook&#x3092;&#x30C7;&#x30D7;&#x30ED;&#x30A4;&#x3059;&#x308B;</h1>
-<h3 id="express&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">express&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</h3>
-<pre><code class="lang-javascript">yarn add express
-</code></pre>
-<h3 id="indexjs&#x3092;&#x4F5C;&#x6210;">index.js&#x3092;&#x4F5C;&#x6210;</h3>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
-<span class="hljs-keyword">var</span> app = express();
-app.use(express.static(__dirname + <span class="hljs-string">&apos;/_book&apos;</span>));
+                                <h1 id="union-type&#x3092;&#x6975;&#x3081;&#x308B;">Union Type&#x3092;&#x6975;&#x3081;&#x308B;</h1>
+<h2 id="union-type">union type</h2>
+<p>union type &#x306F; if &#x6587;&#x3092;&#x4F7F;&#x3063;&#x3066;&#x6761;&#x4EF6;&#x5206;&#x5C90;&#x3092;&#x3057;&#x306A;&#x3044;&#x3068;&#x3044;&#x3051;&#x306A;&#x3044;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x3042;&#x3068;&#x3067;&#x66F8;&#x304F;</span>
+type type1 = string
+type type2 = number
 
-app.listen(process.env.PORT || <span class="hljs-number">3000</span>);
+<span class="hljs-keyword">const</span> string = <span class="hljs-string">&apos;test&apos;</span>
+
+<span class="hljs-keyword">const</span> test: type1 | type2 =
 </code></pre>
-<h3 id="procfile">Procfile</h3>
-<p>Procfile&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;&#x6B21;&#x306E;&#x5185;&#x5BB9;&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;&#x4FDD;&#x5B58;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<pre><code>web: node index.js
-</code></pre><h3 id="heroku&#x306B;&#x30ED;&#x30B0;&#x30A4;&#x30F3;">Heroku&#x306B;&#x30ED;&#x30B0;&#x30A4;&#x30F3;</h3>
-<pre><code>heroku login
-</code></pre><h3 id="heroku&#x306B;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x4F5C;&#x6210;">heroku&#x306B;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x4F5C;&#x6210;</h3>
-<pre><code>heroku create demo
-</code></pre><h3 id="heroku&#x306B;&#x30D7;&#x30C3;&#x30B7;&#x30E5;">Heroku&#x306B;&#x30D7;&#x30C3;&#x30B7;&#x30E5;</h3>
-<pre><code>$ git init
-$ git add .
-$ git commit -m &apos;demo&apos;
-$ git push heroku master
-</code></pre><h3 id="&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x3067;&#x78BA;&#x8A8D;">&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x3067;&#x78BA;&#x8A8D;</h3>
-<pre><code>heroku open
-</code></pre>
+<p>&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x304C;&#x9055;&#x3046;&#x5834;&#x5408;&#x306F;&#x305D;&#x308C;&#x3092;&#x4F7F;&#x3063;&#x3066;&#x6761;&#x4EF6;&#x5206;&#x5C90;&#x3092;&#x3057;&#x306A;&#x3044;&#x3068;&#x3044;&#x3051;&#x306A;&#x3044;&#x3002;</p>
+<p><code>javascript</code></p>
+
                                 
                                 </section>
                             
@@ -802,7 +790,7 @@ $ git push heroku master
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Herokuにgitbookをデプロイする","level":"2.2.1.1","depth":3,"next":{"title":"github","level":"2.2.2","depth":2,"ref":"","articles":[{"title":"変更を取り消す","level":"2.2.2.1","depth":3,"path":"docs/command/github/1.md","ref":"docs/command/github/1.md","articles":[]}]},"previous":{"title":"gitbook","level":"2.2.1","depth":2,"ref":"","articles":[{"title":"Herokuにgitbookをデプロイする","level":"2.2.1.1","depth":3,"path":"docs/command/gitbook/1.md","ref":"docs/command/gitbook/1.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","summary"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"summary":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"docs/command/gitbook/1.md","mtime":"2018-08-26T03:50:29.361Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-26T04:27:46.572Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"union type","level":"2.4.2.1","depth":3,"next":{"title":"javascript","level":"2.5","depth":1,"ref":"","articles":[{"title":"インストールしたパッケージに新しいバージョンが存在するかどうか、確認する。コマンド","level":"2.5.1","depth":2,"path":"docs/javascript/library_version_up.md","ref":"docs/javascript/library_version_up.md","articles":[]}]},"previous":{"title":"flow_learn","level":"2.4.2","depth":2,"ref":"","articles":[{"title":"union type","level":"2.4.2.1","depth":3,"path":"docs/flow/flow_learn/union_type.md","ref":"docs/flow/flow_learn/union_type.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","summary"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"summary":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"docs/flow/flow_learn/union_type.md","mtime":"2018-08-26T04:25:23.837Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-26T04:27:46.572Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

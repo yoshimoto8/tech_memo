@@ -1,3 +1,13 @@
+# Railsの記事まとめ
+
+## コレクションを積極的に使おう
+
+[](https://techracho.bpsinc.jp/hachi8833/2018_07_20/59639)
+
+## map とか reduce とか
+
+[](https://techracho.bpsinc.jp/hachi8833/2018_07_17/57968)
+
 #### いい感じにメソットを切り出す
 
 https://techracho.bpsinc.jp/hachi8833/2018_06_07/57510
