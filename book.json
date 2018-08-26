@@ -1,4 +1,4 @@
 {
   "language": "ja",
-  "plugins": ["-lunr", "-search", "search-pro"]
+  "plugins": ["-lunr", "-search", "search-pro", "summary"]
 }
