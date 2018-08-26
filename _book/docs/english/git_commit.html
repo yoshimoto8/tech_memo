@@ -1,0 +1,2108 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>GitHub で英語を使う · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索すると入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    コマンド
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../command/gitbook/1.html">
+            
+                <a href="../command/gitbook/1.html">
+            
+                    
+                    gitbookをHerokuへデプロイする方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    [英語]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="git_commit.html">
+            
+                <a href="git_commit.html">
+            
+                    
+                    GitHub で英語を使う
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    [javascript]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../javascript/library_version_up.html">
+            
+                <a href="../javascript/library_version_up.html">
+            
+                    
+                    package.jsonのバージョンをあげるtips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            GitBookで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >GitHub で英語を使う</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x5358;&#x8A9E;">&#x5358;&#x8A9E;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x5358;&#x8A9E;</th>
+<th>&#x610F;&#x5473;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>undesirable</td>
+<td>&#x597D;&#x307E;&#x3057;&#x304F;&#x306A;&#x3044;</td>
+</tr>
+<tr>
+<td>avoid, circumvent</td>
+<td>&#x56DE;&#x907F;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td>retrieve</td>
+<td>&#x53D6;&#x308A;&#x306B;&#x884C;&#x304F;(fetch / &#x300C;&#x53D7;&#x3051;&#x53D6;&#x308B;&#x300D;&#x3088;&#x308A;&#x3082;&#x3063;&#x3068;&#x80FD;&#x52D5;&#x7684;&#x306B;&#x300C;&#x53D6;&#x308A;&#x306B;&#x884C;&#x304F;&#x300D;&#x30CB;&#x30E5;&#x30A2;&#x30F3;&#x30B9;&#x3092;&#x793A;&#x3059;)</td>
+</tr>
+<tr>
+<td>revise</td>
+<td>= fix</td>
+</tr>
+<tr>
+<td>tweak</td>
+<td>&#x5FAE;&#x8ABF;&#x6574;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td>in the sight of &#x301C;</td>
+<td>&#x301C;&#x306E;&#x8996;&#x70B9;&#x3067; (point of view &#x3092;&#x308F;&#x3056;&#x3068;&#x4EF0;&#x3005;&#x3057;&#x304F;&#x8A00;&#x3063;&#x305F;&#x611F;&#x3058;)</td>
+</tr>
+<tr>
+<td>refer</td>
+<td>&#x53C2;&#x7167;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td>disambiguate</td>
+<td>&#x66D6;&#x6627;&#x3055;&#x3092;&#x306A;&#x304F;&#x3059;</td>
+</tr>
+<tr>
+<td>quite</td>
+<td>&#x3068;&#x3066;&#x3082;&#xFF08;very &#x306E;&#x304B;&#x308F;&#x308A;&#x306B;&#x3064;&#x304B;&#x3048;&#x308B;</td>
+</tr>
+<tr>
+<td>literally</td>
+<td>&#x6587;&#x5B57;&#x901A;&#x308A;</td>
+</tr>
+<tr>
+<td>exactly</td>
+<td>&#x307E;&#x3055;&#x306B;&#x3001;&#x78BA;&#x304B;&#x306B;&#x3001;&#x30A4;&#x30B0;&#x30B6;&#x30AF;&#x30C8;&#x30EA;&#x30FC;</td>
+</tr>
+<tr>
+<td>resurrect</td>
+<td>&#x3088;&#x307F;&#x304C;&#x3048;&#x3089;&#x305B;&#x308B;</td>
+</tr>
+<tr>
+<td>in favor of</td>
+<td>&#x301C;&#x306B;&#x8CDB;&#x6210;&#x3057;&#x3066;, &#x4F55;&#x304B;&#x306B;&#x6CBF;&#x3063;&#x3066;</td>
+</tr>
+<tr>
+<td>get rid of</td>
+<td>&#x597D;&#x307E;&#x3057;&#x304F;&#x306A;&#x3044;&#x3082;&#x306E;&#x3092;&#x53D6;&#x308A;&#x9664;&#x304F;</td>
+</tr>
+<tr>
+<td>kick out</td>
+<td>get rid of &#x306E;&#x5F37;&#x3044;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x3001;&#x8179;&#x7ACB;&#x305F;&#x3057;&#x3055;&#x3042;&#x308B;</td>
+</tr>
+<tr>
+<td>introduce</td>
+<td>&#x5C0E;&#x5165;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td>extract</td>
+<td>&#x62BD;&#x51FA;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td>no longer used</td>
+<td>&#x3082;&#x306F;&#x3084;&#x4F7F;&#x308F;&#x308C;&#x3066;&#x306A;&#x3044;</td>
+</tr>
+<tr>
+<td>R.I.P.</td>
+<td>&#x5B89;&#x3089;&#x304B;&#x306B;&#x7720;&#x308C;&#xFF08;&#x3082;&#x3046;&#x4F7F;&#x3063;&#x3066;&#x306A;&#x3044;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x6D88;&#x3059;&#x6642;&#x306A;&#x3069;&#x306B;&#x3002;&#x300C;Remove &#x3067;&#x306F;&#x8A9E;&#x308A;&#x304D;&#x308C;&#x306A;&#x3044;&#x601D;&#x3044;&#x304C;&#x3042;&#x308B;&#x3093;&#x3060;&#x300D; by @idesaku &#xFF09;</td>
+</tr>
+<tr>
+<td>defeat</td>
+<td>&#x5012;&#x3059;&#x3001;&#x6253;&#x3061;&#x8CA0;&#x304B;&#x3059;</td>
+</tr>
+<tr>
+<td>:put_litter_in_its_place:<code>:put_litter_in_its_place:</code></td>
+<td>&#x30B4;&#x30DF;&#x306F;&#x30B4;&#x30DF;&#x7BB1;&#x3078;&#xFF08;&#x4E0D;&#x8981;&#x306A;&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x3084; whitespace &#x3092;&#x6D88;&#x3057;&#x305F;&#x3068;&#x304D;&#x306A;&#x3069;&#xFF09;</td>
+</tr>
+<tr>
+<td>cosmetic change, cosme</td>
+<td>&#x30A4;&#x30F3;&#x30C7;&#x30F3;&#x30C8;&#x3092;&#x7F8E;&#x3057;&#x304F;&#x3057;&#x305F;&#x6642;&#x306A;&#x3069;</td>
+</tr>
+<tr>
+<td>fruitful</td>
+<td>&#x307F;&#x306E;&#x308A;&#x306E;&#x591A;&#x3044;&#x301C;, fruitful discussion &#x306A;&#x3069;</td>
+</tr>
+<tr>
+<td>:golf:<code>:golf:</code></td>
+<td>&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x3088;&#x308A;&#x77ED;&#x304F;&#x3057;&#x305F;&#xFF08;code golf&#xFF09;</td>
+</tr>
+<tr>
+<td>Take a cup of coffee</td>
+<td>JS &#x3092; CoffeeScript &#x5316;&#x3057;&#x305F;, &#x307E;&#x305F;&#x306F; Coffee &#x3092;&#x3088;&#x308A; Coffee &#x3089;&#x3057;&#x304F;&#x66F8;&#x3044;&#x305F;</td>
+</tr>
+<tr>
+<td>kick in</td>
+<td>&#x52B9;&#x304D;&#x306F;&#x3058;&#x3081;&#x308B;, &#x9069;&#x7528;&#x3055;&#x308C;&#x308B; &#x306A;&#x3069;&#xFF08;DHH &#x304C;&#x4F7F;&#x3063;&#x3066;&#x3044;&#x305F;&#x3089;&#x3057;&#x3044;&#x3002;&#xFF09;</td>
+</tr>
+<tr>
+<td>A in B out</td>
+<td>B &#x306E;&#x5909;&#x308F;&#x308A;&#x306B; A &#x3092;&#x5C0E;&#x5165;&#xFF08;&#x30B5;&#x30C3;&#x30AB;&#x30FC;&#x7684;&#x306A;&#x611F;&#x3058;&#x3002;Gem &#x306E;&#x5DEE;&#x3057;&#x66FF;&#x3048;&#x306A;&#x3069;&#x306B;&#x4F7F;&#x3046;&#xFF09;</td>
+</tr>
+<tr>
+<td>enable to work</td>
+<td>&#x52D5;&#x304F;&#x3088;&#x3046;&#x306B;&#x3057;&#x305F;</td>
+</tr>
+<tr>
+<td>wipe out</td>
+<td>&#x62ED;&#x3044;&#x53BB;&#x308B;&#xFF08;get rid of, kick out &#x306E;&#x4E9C;&#x7A2E;&#xFF09;</td>
+</tr>
+<tr>
+<td>stop rendering &#x301C;</td>
+<td>&#x301C;&#x3092;&#x8868;&#x793A;&#x3057;&#x306A;&#x3044;</td>
+</tr>
+<tr>
+<td>aesthetic</td>
+<td>cosmetic &#x306E;&#x4E9C;&#x7A2E;&#xFF08;&#x591A;&#x5206;&#xFF09;</td>
+</tr>
+<tr>
+<td>Ooops! :scream:</td>
+<td>&#x3057;&#x3087;&#x3046;&#x3082;&#x306A;&#x3044;&#x30DF;&#x30B9;&#x3057;&#x305F;&#x6642;&#x306A;&#x3069;&#x306B;&#x3002; :scream_cat: <code>:scream_cat:</code> &#x4F7F;&#x3046;&#x3068;&#x304B;&#x308F;&#x3044;&#x307F;&#x3067;&#x308B;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h1 id="changelog-&#x3092;&#x652F;&#x3048;&#x308B;&#x82F1;&#x8A9E;">ChangeLog &#x3092;&#x652F;&#x3048;&#x308B;&#x82F1;&#x8A9E;</h1>
+<p>ChangeLog &#x3092;&#x66F8;&#x304F;&#x969B;&#x306B;&#x3088;&#x304F;&#x4F7F;&#x308F;&#x308C;&#x308B;&#x82F1;&#x8A9E;&#x3092;&#x307E;&#x3068;&#x3081;&#x307E;&#x3057;&#x305F;&#x3002;</p>
+<p>&#x307B;&#x3068;&#x3093;&#x3069;&#x5F15;&#x7528;&#x3067;&#x3059;&#x3002;</p>
+<h2 id="&#x57FA;&#x672C;&#x5F62;">&#x57FA;&#x672C;&#x5F62;</h2>
+<p>&#x57FA;&#x672C;&#x7684;&#x306A;&#x6587;&#x6CD5;&#x3067;&#x3059;&#x3002;&#x3042;&#x3068;&#x306F;&#x5358;&#x8A9E;&#x3092;&#x77E5;&#x3063;&#x3066;&#x3044;&#x308C;&#x3070;&#x5927;&#x4F53;&#x306A;&#x3093;&#x3068;&#x304B;&#x306A;&#x308B;&#x305D;&#x3046;&#x3067;&#x3059;&#x3002;</p>
+<h3 id="&#x5927;&#x6587;&#x5B57;&#x3067;&#x59CB;&#x3081;&#x308B;">&#x5927;&#x6587;&#x5B57;&#x3067;&#x59CB;&#x3081;&#x308B;</h3>
+<pre><code>Fix possible memory leak
+Removed obsolete username_max_length
+</code></pre><h3 id="&#x30D4;&#x30EA;&#x30AA;&#x30C9;&#x3092;&#x3064;&#x3051;&#x306A;&#x3044;">&#x30D4;&#x30EA;&#x30AA;&#x30C9;&#x3092;&#x3064;&#x3051;&#x306A;&#x3044;</h3>
+<pre><code>Changed A to B
+Upgraded A to version 1.0
+</code></pre><h3 id="&#x52D5;&#x8A5E;&#x306E;&#x904E;&#x53BB;&#x5F62;&#x3067;&#x59CB;&#x307E;&#x308B;&#x300C;&#xFF5E;&#x3092;&#x3057;&#x307E;&#x3057;&#x305F;&#x300D;&#x5F62;">&#x52D5;&#x8A5E;&#x306E;&#x904E;&#x53BB;&#x5F62;&#x3067;&#x59CB;&#x307E;&#x308B;&#x300C;&#xFF5E;&#x3092;&#x2026;&#x3057;&#x307E;&#x3057;&#x305F;&#x300D;&#x5F62;</h3>
+<pre><code>Fixed a performance regression
+&#xFF08;&#x30D1;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30F3;&#x30B9;&#x304C;&#x4F4E;&#x4E0B;&#x3059;&#x308B;&#x30D0;&#x30B0;&#x3092;&#x4FEE;&#x6B63;&#x3057;&#x307E;&#x3057;&#x305F;&#xFF09;
+</code></pre><h3 id="&#x300C;&#xFF5E;&#x306F;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x300D;&#x5F62;">&#x300C;&#xFF5E;&#x306F;&#x2026;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x300D;&#x5F62;</h3>
+<p>now + &#x52D5;&#x8A5E;&#x306E;&#x904E;&#x53BB;&#x5206;&#x8A5E;&#x3002;&#x4ED5;&#x69D8;&#x5909;&#x66F4;&#x306A;&#x3069;&#x306E;&#x969B;&#x306B;&#x4F7F;&#x3044;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<pre><code>Minimized pages are now hidden
+&#xFF08;&#x6700;&#x5C0F;&#x5316;&#x3057;&#x305F;&#x30DA;&#x30FC;&#x30B8;&#x306F;&#x4ECA;&#x5F8C;&#x306F;&#x96A0;&#x3055;&#x308C;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#xFF09;
+</code></pre><h3 id="&#x540D;&#x8A5E;&#x53E5;&#x306E;&#x307F;">&#x540D;&#x8A5E;&#x53E5;&#x306E;&#x307F;</h3>
+<p>&#x300C;&#xFF5E;&#xFF08;&#x3068;&#x3044;&#x3046;&#xFF09;&#x3053;&#x3068;&#x300D;&#x7684;&#x306A;&#x3002;</p>
+<pre><code>Many usability improvements
+&#xFF08;&#x591A;&#x304F;&#x306E;&#x30E6;&#x30FC;&#x30B6;&#x30D3;&#x30EA;&#x30C6;&#x30A3;&#x306E;&#x5411;&#x4E0A;&#xFF09;
+</code></pre><h2 id="&#x3061;&#x3087;&#x3063;&#x3068;&#x4FBF;&#x5229;&#x306A;&#x3044;&#x3044;&#x307E;&#x308F;&#x3057;">&#x3061;&#x3087;&#x3063;&#x3068;&#x4FBF;&#x5229;&#x306A;&#x3044;&#x3044;&#x307E;&#x308F;&#x3057;</h2>
+<p>&#x6163;&#x308C;&#x3066;&#x304D;&#x305F;&#x3089;&#x5C11;&#x3005;&#x306E;&#x30A8;&#x30B9;&#x30D7;&#x30EA;&#x3092;&#x304D;&#x304B;&#x305B;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<h3 id="&#x3068;&#x304D;&#x3069;&#x304D;&#xFF08;&#x6642;&#x3005;&#xFF09;">&#x3068;&#x304D;&#x3069;&#x304D;&#xFF08;&#x6642;&#x3005;&#xFF09;</h3>
+<p>a possible &#x3092;&#x4F7F;&#x3046;&#x3002;</p>
+<pre><code>a possible crash.
+&#xFF08;&#x3068;&#x304D;&#x3069;&#x304D;&#x30AF;&#x30E9;&#x30C3;&#x30B7;&#x30E5;&#x3059;&#x308B;&#xFF09;
+
+a possible null pointer dereference.
+&#xFF08;&#x3068;&#x304D;&#x3069;&#x304D;&#x30CC;&#x30EB;&#x30DD;&#x3059;&#x308B;&#xFF09;
+</code></pre><h3 id="&#x4E0D;&#x5177;&#x5408;">&#x4E0D;&#x5177;&#x5408;</h3>
+<p>&#x81F4;&#x547D;&#x7684;&#x3067;&#x306F;&#x306A;&#x3044;&#x4E0D;&#x5177;&#x5408;&#x306B;&#x306F; issue &#x3092;&#x4F7F;&#x3046;&#x3002;</p>
+<pre><code>the stability issue.
+&#xFF08;&#x4E0D;&#x5B89;&#x5B9A;&#x306B;&#x306A;&#x308B;&#x4E0D;&#x5177;&#x5408;&#xFF09;
+</code></pre><h2 id="&#x3088;&#x304F;&#x4F7F;&#x3046;&#x52D5;&#x8A5E;">&#x3088;&#x304F;&#x4F7F;&#x3046;&#x52D5;&#x8A5E;</h2>
+<ul>
+<li><p>&#x65B0;&#x898F;&#x8FFD;&#x52A0;</p>
+<p>add, added</p>
+<pre><code>  Added support for bridgeless SLI with GeForce 8 GPUs
+</code></pre></li>
+<li><p>&#x6539;&#x5584;</p>
+<p>improve, improved</p>
+<pre><code>  Improved device handling
+</code></pre></li>
+<li><p>&#x5909;&#x66F4;</p>
+<p>change, changed</p>
+<pre><code>  Changed A to B
+</code></pre></li>
+<li><p>&#x4FEE;&#x6B63;</p>
+<p>modify, modified</p>
+<pre><code>  Modified IPv6 default listen address
+</code></pre></li>
+<li><p>&#x30D0;&#x30B0;&#x30D5;&#x30A3;&#x30C3;&#x30AF;&#x30B9;</p>
+<p>fix, fixed</p>
+<pre><code>  Fixed a bug in test.t
+</code></pre></li>
+<li><p>&#x524A;&#x9664;</p>
+<p>remove, removed</p>
+<pre><code>  Removed a dependency to Huge::Module
+</code></pre></li>
+<li><p>&#x53D6;&#x308A;&#x6D88;&#x3057;&#xFF08;&#x5DFB;&#x304D;&#x623B;&#x3057;&#xFF09;</p>
+<p>revert, reverted</p>
+<pre><code>  Revert the &apos;require&apos; in command.cmd to do &apos;do&apos;
+</code></pre></li>
+<li><p>&#x66F4;&#x65B0;</p>
+<p>update, updated</p>
+<pre><code>  Updated docs for new-features options
+</code></pre><blockquote>
+<p>Win7 -&gt; Win7-SP1</p>
+</blockquote>
+</li>
+<li><p>&#x62E1;&#x5F35;&#xFF08;&#x6A5F;&#x80FD;&#x8FFD;&#x52A0;&#x306A;&#x3069;&#x3092;&#x3068;&#x3082;&#x306A;&#x3046;&#xFF09;</p>
+<p>upgrade, upgraded</p>
+<pre><code>  upgraded to 1.0
+</code></pre><blockquote>
+<p>Win7 -&gt; Win8</p>
+</blockquote>
+</li>
+<li><p>&#x6709;&#x52B9;&#xFF0F;&#x7121;&#x52B9;</p>
+<p>enable, enabled / disable, disabled</p>
+<pre><code>  Enabled type checking of the app in MyApp::sub
+</code></pre></li>
+<li><p>&#x62E1;&#x5F35;</p>
+<p>extend, extended</p>
+</li>
+<li><p>&#x5F37;&#x5316;&#x3001;&#x5411;&#x4E0A;</p>
+<p>enhance, enhanced</p>
+</li>
+<li><p>&#x5B9F;&#x88C5;</p>
+<p>implement, implemented</p>
+<pre><code>  Implemented app.streaming in all blocking servers
+</code></pre></li>
+<li><p>&#x30EA;&#x30D5;&#x30A1;&#x30AF;&#x30BF;</p>
+<p>refactor, refactored</p>
+<pre><code>  Refactored MyApp
+</code></pre></li>
+<li><p>&#x6700;&#x9069;&#x5316;</p>
+<p>optimize, optimized</p>
+<pre><code>  Optimized a process
+</code></pre></li>
+<li><p>&#x524A;&#x6E1B;&#x3001;&#x5207;&#x308A;&#x8A70;&#x3081;</p>
+<p>reduce, reduced</p>
+<pre><code>  Reduced kernel virtual memory usage with some GeForce 8 GPUs
+</code></pre></li>
+<li><p>&#x5FAE;&#x8ABF;&#x6574;</p>
+<p>tweak, tweaked</p>
+<pre><code>  Tweaked labels of graph metrics
+</code></pre></li>
+<li><p>&#x5BFE;&#x5FDC;</p>
+<p>suppor, supported</p>
+<pre><code>  Supported the new format.
+</code></pre></li>
+</ul>
+<h2 id="&#x51A0;&#x8A5E;a-the-any-some">&#x51A0;&#x8A5E;(a, the, any, some)</h2>
+<ul>
+<li><p>a, the</p>
+<p>&#x305D;&#x308C;&#x3068;&#x5225;&#x7269;&#x3092;&#x7F6E;&#x304D;&#x63DB;&#x3048;&#x3066;&#x3082;&#x6587;&#x7AE0;&#x304C;&#x6210;&#x308A;&#x7ACB;&#x3064;&#x5834;&#x5408;&#x3002;
+&#x3069;&#x308C;&#x3067;&#x3082;&#x3044;&#x3044;&#x306E;&#x304C; a</p>
+<p>&#x305D;&#x308C;&#x3067;&#x306A;&#x3044;&#x3068;&#x6587;&#x7AE0;&#x304C;&#x6210;&#x308A;&#x7ACB;&#x305F;&#x306A;&#x3044;&#x5834;&#x5408;&#x3002;
+&#x305D;&#x308C;&#x3058;&#x3083;&#x306A;&#x3044;&#x3068;&#x99C4;&#x76EE;&#x306A;&#x306E;&#x304C; the</p>
+<blockquote>
+<ul>
+<li>&#x3060;&#x304B;&#x3089;&#x4E5E;&#x98DF;&#x306F;&quot;Would you give me a quarter.&quot;(25 &#x30BB;&#x30F3;&#x30C8;&#x304F;&#x308C;)&#x3068;&#x8A00;&#x3046;&#x306E;&#x306B;&#x3001;&#x53D6;&#x5F15;&#x3067;&#x306F;&quot;Give me the money.&quot;(&#x305D;&#x306E;&#x91D1;&#x3088;&#x3053;&#x305B;)&#x3068;&#x8A00;&#x3046;&#x308F;&#x3051;&#x3067;&#x3059;....&#x3068;&#x3044;&#x3046;&#x306E;&#x306F;&#x534A;&#x5206;&#x5197;&#x8AC7;&#x3067;&#x3059;&#x304C;&#x3001;&#x305D;&#x3046;&#x3044;&#x3046;&#x3053;&#x3068;&#x3067;&#x3059;&#x3002;</li>
+<li>OOP(Object Oriented Programming)&#x3067;&#x8A00;&#x3046;&#x3068;&#x3001;a &#x304C;&#x30AF;&#x30E9;&#x30B9;(class)&#x3067; the &#x304C;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;(instance)&#x3060;&#x3002;</li>
+</ul>
+</blockquote>
+</li>
+<li><p>any, some</p>
+<p>any =&gt; a, some =&gt; the</p>
+<blockquote>
+<p>&#x266A;Help! I need somebody<br>
+&#x266A;Help! Not just anybody</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="&#x6CE8;&#x610F;&#x4E8B;&#x9805;">&#x6CE8;&#x610F;&#x4E8B;&#x9805;</h3>
+<ul>
+<li><p>&#x56FA;&#x6709;&#x540D;&#x8A5E;&#x306B;&#x306F; the &#x3092;&#x3064;&#x3051;&#x306A;&#x3044;</p>
+<p>&#x56FA;&#x6709;&#x540D;&#x8A5E;: &#x4EBA;&#x540D;&#x3084;&#x5730;&#x540D;&#x7B49;&#x3001;&#x305D;&#x308C;&#x4EE5;&#x5916;&#x306B;&#x306F;&#x5B58;&#x5728;&#x3057;&#x306A;&#x3044;&#x7279;&#x5B9A;&#x306E;&#x5BFE;&#x8C61;&#x3092;&#x8868;&#x3059;&#x540D;&#x8A5E;</p>
+<blockquote>
+<p>Taro, Tokyo, Japan</p>
+</blockquote>
+</li>
+<li><p>&#x4F5C;&#x54C1;&#x7D39;&#x4ECB;&#x3067;&#x306F; a &#x3092;&#x4F7F;&#x3046;</p>
+<blockquote>
+<ul>
+<li>Spirited Away&apos; is a Miyazaki film. The movie won the Academy Award in 2001.</li>
+<li>It&apos;s a Sony</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<h1 id="&#x4EE5;&#x4E0B;&#x5217;&#x6319;">&#x4EE5;&#x4E0B;&#x5217;&#x6319;</h1>
+<p>&#xFF08;&#x4F8B;&#x306F;&#x5B9F;&#x969B;&#x306E;&#x540C;&#x50DA;&#x3084; OSS &#x4E0A;&#x3067;&#x306E;&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x3067;&#x3059;.&#xFF09;</p>
+<h2 id="add-a-to-b">Add <em>A to </em>B</h2>
+<p><em>A &#x3092;</em>B &#x306B;&#x52A0;&#x3048;&#x308B;</p>
+<pre><code class="lang-tex:&#x4F8B;">Add ambiences to admin_notify_organizer_new_event email.
+</code></pre>
+<h2 id="remove-a-from-b">Remove <em>A from </em>B</h2>
+<p><em>B &#x304B;&#x3089;</em>A &#x3092;&#x53D6;&#x308A;&#x9664;&#x304F;</p>
+<pre><code class="lang-tex:&#x4F8B;">Remove config/database.yml from git index and add it to gitignore.
+</code></pre>
+<h2 id="move-a-from-b-to-c">Move <em>A from </em>B to *C</h2>
+<p><em>A &#x3092;</em>B &#x304B;&#x3089;*C &#x306B;&#x52D5;&#x304B;&#x3059;</p>
+<pre><code class="lang-tex:&#x4F8B;">Move admin_notify_venues_shortlisted email from LeadMailer to AdminMailer.
+</code></pre>
+<h2 id="replace-a-with-b">Replace <em>A with </em>B</h2>
+<p><em>A &#x3092;</em>B &#x306B;&#x53D6;&#x308A;&#x66FF;&#x3048;&#x308B;</p>
+<pre><code class="lang-tex:&#x4F8B;">Replace the elaborate reloading connection checking scheme, just fix the Ruby-based MySQL adapter, ye?
+</code></pre>
+<h2 id="make-a-b">Make <em>A </em>B</h2>
+<p><em>A &#x3092;</em>B &#x306B;&#x3059;&#x308B;&#x3001;&#x3055;&#x305B;&#x308B;</p>
+<pre><code class="lang-tex:&#x4F8B;">Make javascript_include_tag :default behave correctly with application.js
+</code></pre>
+<pre><code class="lang-tex:&#x4F8B;">Make counter_cache work with polymorphic belongs_to
+</code></pre>
+<h2 id="change-a-to-b">Change <em>A to </em>B</h2>
+<p><em>A &#x3092;</em>B &#x306B;&#x5909;&#x66F4;&#x3059;&#x308B;.</p>
+<pre><code class="lang-tex:&#x4F8B;">Change a to an for HTML word [ci skip]
+</code></pre>
+<h2 id="update-a-to-b">Update <em>A to </em>B</h2>
+<p><em>A &#x3092;</em>B &#x306B;&#x66F4;&#x65B0;&#x3059;&#x308B;</p>
+<pre><code class="lang-tex:&#x4F8B;">Update edge to script.aculo.us to 1.7.1_beta3
+</code></pre>
+<h2 id="ensure-a">Ensure *A</h2>
+<p>*A &#x3067;&#x3042;&#x308B;&#x4E8B;&#x3092;&#x78BA;&#x5B9F;&#x306B;&#x3059;&#x308B;.</p>
+<p>that &#x7BC0;&#x3068;&#x3088;&#x304F;&#x4F7F;&#x3046;&#x307D;&#x3044;.</p>
+<pre><code class="lang-tex:&#x4F8B;">Ensure that request.path never returns nil.
+</code></pre>
+<h2 id="use-a">Use *A</h2>
+<p>*A &#x3092;&#x4F7F;&#x3046;.</p>
+<p>&#x5358;&#x4F53;&#x3067;&#x7528;&#x3044;&#x308B;&#x3088;&#x308A;&#x3082; instead of &#x3084; for &#x306E;&#x524D;&#x7F6E;&#x8A5E;&#xFF08;&#x4E0B;&#x90E8;&#x3067;&#x8FF0;&#x3079;&#x308B;&#xFF09;&#x3068;&#x3088;&#x304F;&#x4F7F;&#x3046;&#x3063;&#x307D;&#x3044;</p>
+<pre><code class="lang-tex:&#x4F8B;">Use `Base.strict_decode64` instead of `Base.decode64` just as we do in encoding;
+</code></pre>
+<h2 id="fix-a">Fix *A</h2>
+<p>*A &#x3092;&#x76F4;&#x3059;</p>
+<pre><code class="lang-tex:&#x4F8B;">Fix saving reject_reason when rejecting lead.
+</code></pre>
+<h2 id="&#x305D;&#x306E;&#x4ED6;&#x6BD4;&#x8F03;&#x7684;&#x983B;&#x5EA6;&#x306E;&#x9AD8;&#x304B;&#x3063;&#x305F;&#x52D5;&#x8A5E;">&#x305D;&#x306E;&#x4ED6;&#x6BD4;&#x8F03;&#x7684;&#x983B;&#x5EA6;&#x306E;&#x9AD8;&#x304B;&#x3063;&#x305F;&#x52D5;&#x8A5E;</h2>
+<p>&#x4E0A;&#x8A18;&#x304C;&#x984C;&#x610F;&#x3068;&#x306A;&#x308B;&#x983B;&#x51FA;&#x52D5;&#x8A5E;&#xFF11;&#xFF10;&#x3067;&#x3059;.</p>
+<p>&#x4EE5;&#x4E0B;&#x306F;&#x305D;&#x306E;&#x4ED6;&#x6BD4;&#x8F03;&#x7684;&#x983B;&#x5EA6;&#x306E;&#x9AD8;&#x304B;&#x3063;&#x305F;&#x52D5;&#x8A5E;&#x3067;&#x3059;.</p>
+<h4 id="refactor">Refactor</h4>
+<pre><code class="lang-tex:&#x4F8B;">Refactor RoutesReloader a bit to avoid creating extra hash objects
+</code></pre>
+<h4 id="improve">Improve</h4>
+<pre><code class="lang-tex:&#x4F8B;">Improved the silence method on the logger to ensure restoring the old level
+</code></pre>
+<h4 id="extract">Extract</h4>
+<pre><code class="lang-tex:&#x4F8B;">Extract InflectorTestCases so both inflector and string inflections tests can use them.
+</code></pre>
+<h4 id="deprecate">Deprecate</h4>
+<pre><code class="lang-tex:&#x4F8B;">Deprecate using method_missing for attributes that are columns.
+</code></pre>
+<h4 id="avoid">Avoid</h4>
+<pre><code class="lang-tex:&#x4F8B;">Avoid empty transaction from setting has_one association on new record.
+</code></pre>
+<h4 id="simplify">Simplify</h4>
+<pre><code class="lang-tex:&#x4F8B;">Simplify Preloader#grouped_records code.
+</code></pre>
+<h4 id="define">Define</h4>
+<pre><code class="lang-tex:&#x4F8B;">Define the Duration#instance_of? method
+</code></pre>
+<h4 id="allow">Allow</h4>
+<pre><code class="lang-tex:&#x4F8B;">Allow use of assert_template with the :file option.
+</code></pre>
+<h4 id="switch-from-a-to-b">Switch from <em>A to </em>B</h4>
+<pre><code class="lang-tex:&#x4F8B;">Switch from SHA2 to BCrypt
+</code></pre>
+<h4 id="implement">Implement</h4>
+<pre><code class="lang-tex:&#x4F8B;">Implement #== for column
+</code></pre>
+<h4 id="clean-up">Clean up</h4>
+<pre><code class="lang-tex:&#x4F8B;">Clean up JobWrappers::ResqueWrapper.perform
+</code></pre>
+<h4 id="enable">Enable</h4>
+<pre><code class="lang-tex:&#x4F8B;">Enable memcached service on travis for running cache tests.
+</code></pre>
+<h4 id="sorting-a-by-b">Sorting <em>A by </em>B</h4>
+<pre><code class="lang-tex:&#x4F8B;">Sort migrations by the migration ID.
+</code></pre>
+<h4 id="rewrite">Rewrite</h4>
+<pre><code class="lang-tex:&#x4F8B;">Rewrite Account Setting page from ERB to HAML.
+</code></pre>
+<h4 id="support">Support</h4>
+<pre><code class="lang-tex:&#x4F8B;">Support multiple config.after_initialize blocks so plugins and apps can more easily cooperate.
+</code></pre>
+<h4 id="stop-prevent">Stop, Prevent</h4>
+<pre><code class="lang-tex:&#x4F8B;">Stop relying on columns in sqlite quoting tests
+</code></pre>
+<h4 id="drop">Drop</h4>
+<pre><code class="lang-tex:&#x4F8B;">Drop variable assignment in validations
+</code></pre>
+<h2 id="&#x524D;&#x7F6E;&#x8A5E;&#xFF08;&#x4E0A;&#x8A18;&#x306E;&#x52D5;&#x8A5E;&#x306B;&#x60C5;&#x5831;&#x3092;&#x4ED8;&#x52A0;&#x3059;&#x308B;&#x3082;&#x306E;&#xFF09;">&#x524D;&#x7F6E;&#x8A5E;&#xFF08;&#x4E0A;&#x8A18;&#x306E;&#x52D5;&#x8A5E;&#x306B;&#x60C5;&#x5831;&#x3092;&#x4ED8;&#x52A0;&#x3059;&#x308B;&#x3082;&#x306E;&#xFF09;</h2>
+<h2 id="with-p">with *P</h2>
+<p>*P &#x3068;&#x4E00;&#x7DD2;&#x306B;&#x3001;&#x4F34;&#x3063;&#x3066;</p>
+<pre><code class="lang-tex:&#x4F8B;">Fixed error with &apos;rails generate new plugin&apos;.
+</code></pre>
+<h2 id="for-p">for *P</h2>
+<p>*P &#x306E;&#x305F;&#x3081;&#x306B;</p>
+<pre><code class="lang-tex:&#x4F8B;">Add a simple API for fetching a list of entries from the cache
+</code></pre>
+<h2 id="instead-of-p">instead of *P</h2>
+<p>*P &#x306E;&#x4EE3;&#x308F;&#x308A;&#x306B;</p>
+<pre><code class="lang-tex:&#x4F8B;">Use `Base.strict_decode64` instead of `Base.decode64` just as we do in encoding;
+</code></pre>
+<h2 id="in-p">in *P</h2>
+<p>*P &#x306E;&#x3001;&#x3067;</p>
+<pre><code class="lang-tex:&#x4F8B;">Use strong_params in example
+</code></pre>
+<h2 id="at-p">at *P</h2>
+<p>*P &#x306E;&#x3001;&#x3067;</p>
+<pre><code class="lang-tex:&#x4F8B;">Revert &quot;log at debug level what line caused the redirect_to&quot;
+</code></pre>
+<h2 id="as-p">as *P</h2>
+<p>*P &#x3068;&#x3057;&#x3066;</p>
+<pre><code class="lang-tex:&#x4F8B;">Stop messing up with instance variables, use protected as it was meant for
+</code></pre>
+<h2 id="&#x983B;&#x51FA;&#x52D5;&#x8A5E;-top20">&#x983B;&#x51FA;&#x52D5;&#x8A5E; TOP20</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x9806;&#x4F4D;</th>
+<th style="text-align:left">&#x82F1;&#x5358;&#x8A9E;</th>
+<th style="text-align:left">&#x610F;&#x5473;</th>
+<th style="text-align:left">&#x51FA;&#x73FE;&#x56DE;&#x6570;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">fix/fixed/fixes</td>
+<td style="text-align:left">&#x4FEE;&#x6B63;&#x3059;&#x308B;</td>
+<td style="text-align:left">165084/35773/19813</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">add/added</td>
+<td style="text-align:left">&#x8FFD;&#x52A0;&#x3059;&#x308B;</td>
+<td style="text-align:left">141711/35282</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left">remove/removed</td>
+<td style="text-align:left">&#x53D6;&#x308A;&#x9664;&#x304F;</td>
+<td style="text-align:left">81124/12528</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left">use</td>
+<td style="text-align:left">&#x7528;&#x3044;&#x308B;</td>
+<td style="text-align:left">75767</td>
+</tr>
+<tr>
+<td style="text-align:left">5</td>
+<td style="text-align:left">update/updated</td>
+<td style="text-align:left">&#x66F4;&#x65B0;&#x3059;&#x308B;</td>
+<td style="text-align:left">57004/11761</td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left">support</td>
+<td style="text-align:left">&#x30B5;&#x30DD;&#x30FC;&#x30C8;&#x3059;&#x308B;</td>
+<td style="text-align:left">43808</td>
+</tr>
+<tr>
+<td style="text-align:left">7</td>
+<td style="text-align:left">merge</td>
+<td style="text-align:left">&#x30DE;&#x30FC;&#x30B8;&#x3059;&#x308B;</td>
+<td style="text-align:left">34762</td>
+</tr>
+<tr>
+<td style="text-align:left">8</td>
+<td style="text-align:left">make</td>
+<td style="text-align:left">&#x4F5C;&#x6210;&#x3059;&#x308B;</td>
+<td style="text-align:left">31425</td>
+</tr>
+<tr>
+<td style="text-align:left">9</td>
+<td style="text-align:left">move</td>
+<td style="text-align:left">&#x79FB;&#x52D5;&#x3055;&#x305B;&#x308B;</td>
+<td style="text-align:left">22208</td>
+</tr>
+<tr>
+<td style="text-align:left">10</td>
+<td style="text-align:left">don&apos;t</td>
+<td style="text-align:left">&#x3057;&#x306A;&#x3044;</td>
+<td style="text-align:left">21431</td>
+</tr>
+<tr>
+<td style="text-align:left">11</td>
+<td style="text-align:left">check</td>
+<td style="text-align:left">&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3059;&#x308B;</td>
+<td style="text-align:left">16882</td>
+</tr>
+<tr>
+<td style="text-align:left">12</td>
+<td style="text-align:left">change</td>
+<td style="text-align:left">&#x5909;&#x66F4;&#x3059;&#x308B;</td>
+<td style="text-align:left">14594</td>
+</tr>
+<tr>
+<td style="text-align:left">13</td>
+<td style="text-align:left">allow</td>
+<td style="text-align:left">&#x8A31;&#x3059;</td>
+<td style="text-align:left">14352</td>
+</tr>
+<tr>
+<td style="text-align:left">14</td>
+<td style="text-align:left">cleanup/clean</td>
+<td style="text-align:left">&#x4E00;&#x6383;&#x3059;&#x308B;</td>
+<td style="text-align:left">12217/8405</td>
+</tr>
+<tr>
+<td style="text-align:left">15</td>
+<td style="text-align:left">set</td>
+<td style="text-align:left">&#x30BB;&#x30C3;&#x30C8;&#x3059;&#x308B;</td>
+<td style="text-align:left">13132</td>
+</tr>
+<tr>
+<td style="text-align:left">16</td>
+<td style="text-align:left">convert</td>
+<td style="text-align:left">&#x5909;&#x63DB;&#x3059;&#x308B;</td>
+<td style="text-align:left">11633</td>
+</tr>
+<tr>
+<td style="text-align:left">17</td>
+<td style="text-align:left">rename</td>
+<td style="text-align:left">&#x30EA;&#x30CD;&#x30FC;&#x30E0;&#x3059;&#x308B;</td>
+<td style="text-align:left">10703</td>
+</tr>
+<tr>
+<td style="text-align:left">18</td>
+<td style="text-align:left">do</td>
+<td style="text-align:left">&#x3059;&#x308B;</td>
+<td style="text-align:left">10028</td>
+</tr>
+<tr>
+<td style="text-align:left">19</td>
+<td style="text-align:left">revert</td>
+<td style="text-align:left">&#x30EA;&#x30D0;&#x30FC;&#x30C8;&#x3059;&#x308B;</td>
+<td style="text-align:left">9268</td>
+</tr>
+<tr>
+<td style="text-align:left">20</td>
+<td style="text-align:left">avoid</td>
+<td style="text-align:left">&#x907F;&#x3051;&#x308B;</td>
+<td style="text-align:left">8822</td>
+</tr>
+</tbody>
+</table>
+<p>&#x30B7;&#x30F3;&#x30D7;&#x30EB;&#x306A;&#x5358;&#x8A9E;&#x304C;&#x591A;&#x3044;&#x3088;&#x3046;&#x3067;&#x3059;&#x3002;
+modify &#x304C;&#x5165;&#x3063;&#x3066;&#x3044;&#x306A;&#x3044;&#x306E;&#x306F;&#x610F;&#x5916;&#x3067;&#x3057;&#x305F;&#x3002;20 &#x4F4D;&#x4EE5;&#x964D;&#x306F;&#x3001;improve &#x3084;&#x3001;handle&#x3001;replace &#x306A;&#x3069;&#x306E;&#x52D5;&#x8A5E;&#x304C;&#x7D9A;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x3057;&#x304B;&#x3057;&#x3001;&#x52D5;&#x8A5E;&#x304C;&#x5206;&#x304B;&#x3063;&#x305F;&#x3060;&#x3051;&#x3067;&#x306F;&#x3001;&#x82F1;&#x8A9E;&#x3067;&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x66F8;&#x3051;&#x307E;&#x305B;&#x3093;&#x3088;&#x306D;&#x3002;
+&#x3053;&#x308C;&#x3089;&#x306E;&#x52D5;&#x8A5E;&#x3068;&#x30BB;&#x30C3;&#x30C8;&#x3067;&#x3088;&#x304F;&#x7528;&#x3044;&#x3089;&#x308C;&#x308B;&#x5358;&#x8A9E;&#x3092;&#x5206;&#x6790;&#x3057;&#x3066;&#x307F;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="&#x983B;&#x51FA;&#x52D5;&#x8A5E;&#x3068;&#x30BB;&#x30C3;&#x30C8;&#x3067;&#x3088;&#x304F;&#x7528;&#x3044;&#x3089;&#x308C;&#x3066;&#x3044;&#x308B;&#x5358;&#x8A9E;&#x3068;&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x96C6;">&#x983B;&#x51FA;&#x52D5;&#x8A5E;&#x3068;&#x30BB;&#x30C3;&#x30C8;&#x3067;&#x3088;&#x304F;&#x7528;&#x3044;&#x3089;&#x308C;&#x3066;&#x3044;&#x308B;&#x5358;&#x8A9E;&#x3068;&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x96C6;</h2>
+<p>&#x983B;&#x51FA;&#x52D5;&#x8A5E;&#x3068;&#x30BB;&#x30C3;&#x30C8;&#x3067;&#x7528;&#x3044;&#x3089;&#x308C;&#x305F;&#x5358;&#x8A9E;&#x3001;&#x305D;&#x308C;&#x305E;&#x308C; TOP10 &#x3092;&#x89E3;&#x6790;&#x3057;&#x3001;
+&#x305D;&#x306E;&#x4E2D;&#x304B;&#x3089;&#x3001;&#x6709;&#x7528;&#x306A;&#x7D44;&#x307F;&#x5408;&#x308F;&#x305B;&#x3068;&#x5B9F;&#x969B;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x3092;&#x5217;&#x6319;&#x3057;&#x3066;&#x3044;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<h3 id="1-&#x4F4D;fix">1 &#x4F4D;.fix</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5358;&#x8A9E;&#x306E;&#x30BB;&#x30C3;&#x30C8;</th>
+<th style="text-align:left">&#x4EE3;&#x8868;&#x4F8B;</th>
+<th style="text-align:left">&#x610F;&#x5473;</th>
+<th style="text-align:left">&#x5B9F;&#x969B;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">fix,in</td>
+<td style="text-align:left">Fix A in B</td>
+<td style="text-align:left">B &#x306E;&#x7B87;&#x6240;&#x306E; A &#x3092;&#x4FEE;&#x6B63;</td>
+<td style="text-align:left">Fix typo in docs</td>
+</tr>
+<tr>
+<td style="text-align:left">fix,for</td>
+<td style="text-align:left">Fix for A</td>
+<td style="text-align:left">A &#x306B;&#x5BFE;&#x3059;&#x308B;&#x4FEE;&#x6B63;</td>
+<td style="text-align:left">fix for #4183</td>
+</tr>
+<tr>
+<td style="text-align:left">fix,to</td>
+<td style="text-align:left">Fix A to B</td>
+<td style="text-align:left">B &#x3078;&#x306E; A &#x3092;&#x4FEE;&#x6B63;</td>
+<td style="text-align:left">Fix link to the spec</td>
+</tr>
+<tr>
+<td style="text-align:left">fix,of</td>
+<td style="text-align:left">Fix A of B</td>
+<td style="text-align:left">B &#x306E; A &#x3092;&#x4FEE;&#x6B63;</td>
+<td style="text-align:left">fix location of favicon</td>
+</tr>
+</tbody>
+</table>
+<p>fix &#x306F;&#x3001;&#x3044;&#x308D;&#x3044;&#x308D;&#x306A;&#x524D;&#x7F6E;&#x8A5E;&#x3068;&#x7528;&#x3044;&#x3089;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;
+fix &#x3060;&#x3051;&#x3067;&#x306F;&#x306A;&#x3044;&#x306E;&#x3067;&#x3059;&#x304C;&#x3001;for &#x306E;&#x5F8C;&#x306B;&#x306F;&#x3001;issue &#x306E; ID &#x306A;&#x3069;&#x304C;&#x3088;&#x304F;&#x7528;&#x3044;&#x3089;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h3 id="2-&#x4F4D;add">2 &#x4F4D;.add</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5358;&#x8A9E;&#x306E;&#x30BB;&#x30C3;&#x30C8;</th>
+<th style="text-align:left">&#x4EE3;&#x8868;&#x4F8B;</th>
+<th style="text-align:left">&#x610F;&#x5473;</th>
+<th style="text-align:left">&#x5B9F;&#x969B;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">add,to</td>
+<td style="text-align:left">Add A to B</td>
+<td style="text-align:left">B &#x306B; A &#x3092;&#x8FFD;&#x52A0;</td>
+<td style="text-align:left">add .js to import</td>
+</tr>
+<tr>
+<td style="text-align:left">add,for</td>
+<td style="text-align:left">Add A for B</td>
+<td style="text-align:left">B &#x7528;&#x306B; A &#x3092;&#x8FFD;&#x52A0;</td>
+<td style="text-align:left">Add test for bug #3116</td>
+</tr>
+</tbody>
+</table>
+<p>add &#x306F;&#x3001;to &#x304C;&#x3088;&#x304F;&#x7528;&#x3044;&#x3089;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h3 id="3-&#x4F4D;remove">3 &#x4F4D;.remove</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5358;&#x8A9E;&#x306E;&#x30BB;&#x30C3;&#x30C8;</th>
+<th style="text-align:left">&#x4EE3;&#x8868;&#x4F8B;</th>
+<th style="text-align:left">&#x610F;&#x5473;</th>
+<th style="text-align:left">&#x5B9F;&#x969B;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">remove,from</td>
+<td style="text-align:left">Remove A from B</td>
+<td style="text-align:left">B &#x304B;&#x3089; A &#x3092;&#x9664;&#x53BB;</td>
+<td style="text-align:left">Remove Debug from tests</td>
+</tr>
+<tr>
+<td style="text-align:left">remove,in</td>
+<td style="text-align:left">Remove A in B</td>
+<td style="text-align:left">B &#x306E;&#x7B87;&#x6240;&#x306E; A &#x3092;&#x9664;&#x53BB;</td>
+<td style="text-align:left">Remove duplication in render function</td>
+</tr>
+<tr>
+<td style="text-align:left">remove,unused</td>
+<td style="text-align:left">Remove unused A</td>
+<td style="text-align:left">&#x4E0D;&#x5FC5;&#x8981;&#x306A; A &#x3092;&#x9664;&#x53BB;</td>
+<td style="text-align:left">Remove unused code</td>
+</tr>
+</tbody>
+</table>
+<p>unused &#x306F; remove &#x306B;&#x9650;&#x3089;&#x305A;&#x4F7F;&#x3048;&#x305D;&#x3046;&#x3067;&#x3059;&#x3002;</p>
+<h3 id="4-&#x4F4D;use">4 &#x4F4D;.use</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5358;&#x8A9E;&#x306E;&#x30BB;&#x30C3;&#x30C8;</th>
+<th style="text-align:left">&#x4EE3;&#x8868;&#x4F8B;</th>
+<th style="text-align:left">&#x610F;&#x5473;</th>
+<th style="text-align:left">&#x3000;&#x5B9F;&#x969B;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">use,to</td>
+<td style="text-align:left">to use A</td>
+<td style="text-align:left">A &#x3092;&#x7528;&#x3044;&#x308B;&#x305F;&#x3081;&#x306B;</td>
+<td style="text-align:left">Change syntax to use dots</td>
+</tr>
+<tr>
+<td style="text-align:left">use,of</td>
+<td style="text-align:left">Use A instead of B</td>
+<td style="text-align:left">B &#x306E;&#x4EE3;&#x308F;&#x308A;&#x306B; A &#x3092;&#x7528;&#x3044;&#x308B;</td>
+<td style="text-align:left">Use ++ instead of += 1</td>
+</tr>
+<tr>
+<td style="text-align:left">use,in</td>
+<td style="text-align:left">Use A in B</td>
+<td style="text-align:left">B &#x306E;&#x7B87;&#x6240;&#x306E; A &#x3092;&#x7528;&#x3044;&#x308B;</td>
+<td style="text-align:left">Use stub in testing.</td>
+</tr>
+<tr>
+<td style="text-align:left">use,for</td>
+<td style="text-align:left">Use A for B</td>
+<td style="text-align:left">B &#x306E;&#x305F;&#x3081;&#x306B; A &#x3092;&#x7528;&#x3044;&#x308B;</td>
+<td style="text-align:left">use Ruby for mocking</td>
+</tr>
+<tr>
+<td style="text-align:left">use,remove</td>
+<td style="text-align:left">Remove use of B</td>
+<td style="text-align:left">B &#x3092;&#x7528;&#x3044;&#x308B;&#x306E;&#x3092;&#x9664;&#x53BB;</td>
+<td style="text-align:left">Remove use of deprecated method</td>
+</tr>
+</tbody>
+</table>
+<p>use &#x306F;&#x3001;&#x4E0D;&#x5B9A;&#x8A5E;&#x3068;&#x3057;&#x3066;&#x7528;&#x3044;&#x3089;&#x308C;&#x3066;&#x3044;&#x3066;&#x3044;&#x307E;&#x3057;&#x305F;&#x3002;
+&#x307E;&#x305F;&#x3001;&#x540D;&#x8A5E;&#x3068;&#x3057;&#x3066;&#x3082;&#x7528;&#x3044;&#x3089;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x306D;&#x3002;instead of &#x306F;&#x3001;use &#x306B;&#x9650;&#x3089;&#x305A;&#x4F7F;&#x3048;&#x305D;&#x3046;&#x3067;&#x3059;&#x3002;</p>
+<h3 id="5-&#x4F4D;update">5 &#x4F4D;.update</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5358;&#x8A9E;&#x306E;&#x30BB;&#x30C3;&#x30C8;</th>
+<th style="text-align:left">&#x4EE3;&#x8868;&#x4F8B;</th>
+<th style="text-align:left">&#x610F;&#x5473;</th>
+<th style="text-align:left">&#x3000;&#x5B9F;&#x969B;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">update,to</td>
+<td style="text-align:left">Update to A <br> Update A to B</td>
+<td style="text-align:left">A &#x306B;&#x30A2;&#x30C3;&#x30D7;&#x30C7;&#x30FC;&#x30C8;<br>A &#x3092; B &#x306B;&#x30A2;&#x30C3;&#x30D7;&#x30C7;&#x30FC;&#x30C8;</td>
+<td style="text-align:left">Update to Unicode 6.3.0<br>Update Modernizr to v1.6</td>
+</tr>
+<tr>
+<td style="text-align:left">update,for</td>
+<td style="text-align:left">Update A for B</td>
+<td style="text-align:left">B &#x306B;&#x5BFE;&#x3057;&#x3066; A &#x3092;&#x30A2;&#x30C3;&#x30D7;&#x30C7;&#x30FC;&#x30C8;</td>
+<td style="text-align:left">update History.md for #1563</td>
+</tr>
+</tbody>
+</table>
+<h3 id="6-&#x4F4D;support">6 &#x4F4D;.support</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5358;&#x8A9E;&#x306E;&#x30BB;&#x30C3;&#x30C8;</th>
+<th style="text-align:left">&#x4EE3;&#x8868;&#x4F8B;</th>
+<th style="text-align:left">&#x610F;&#x5473;</th>
+<th style="text-align:left">&#x3000;&#x5B9F;&#x969B;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">support,add</td>
+<td style="text-align:left">Add A support<br>Add support for A</td>
+<td style="text-align:left">A &#x30B5;&#x30DD;&#x30FC;&#x30C8;&#x3092;&#x8FFD;&#x52A0;<br>A &#x306B;&#x5BFE;&#x3059;&#x308B;&#x30B5;&#x30DD;&#x30FC;&#x30C8;&#x3092;&#x8FFD;&#x52A0;</td>
+<td style="text-align:left">Add Travis CI Support<br>Add support for callbacks</td>
+</tr>
+</tbody>
+</table>
+<p>support &#x306F;&#x3001;&#x540D;&#x8A5E;&#x7684;&#x306B;&#x3082;&#x4F7F;&#x308F;&#x308C;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x304C;&#x591A;&#x3044;&#x3088;&#x3046;&#x3067;&#x3059;&#x3002;</p>
+<h3 id="8-&#x4F4D;make">8 &#x4F4D;.make</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5358;&#x8A9E;&#x306E;&#x30BB;&#x30C3;&#x30C8;</th>
+<th style="text-align:left">&#x4EE3;&#x8868;&#x4F8B;</th>
+<th style="text-align:left">&#x610F;&#x5473;</th>
+<th style="text-align:left">&#x3000;&#x5B9F;&#x969B;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">make,of</td>
+<td style="text-align:left">Make use of A</td>
+<td style="text-align:left">A &#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;</td>
+<td style="text-align:left">make use of Ember.isNone explicit in Ember.isEmpty</td>
+</tr>
+<tr>
+<td style="text-align:left">make,it</td>
+<td style="text-align:left">Make it A<br>Make it A &#x306E;&#x6BD4;&#x8F03;&#x7D1A;</td>
+<td style="text-align:left">A &#x306B;&#x3059;&#x308B;<br>&#x3088;&#x308A; A &#x306B;&#x3059;&#x308B;<br>(A &#x306B;&#x306F;&#x3001;possible,simple,easy,clear &#x306A;&#x3069;)</td>
+<td style="text-align:left">Make it possible to have IDs per request <br>Make it easy to check platform requirements in a command<br>Make it easier to debug the release script</td>
+</tr>
+<tr>
+<td style="text-align:left">make,sure</td>
+<td style="text-align:left">Make sure to A<br>Make sure (that) A</td>
+<td style="text-align:left">&#x5FC5;&#x305A; A &#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;</td>
+<td style="text-align:left">Make sure to reset default_url_options<br>Make sure all packages rebuild.</td>
+</tr>
+</tbody>
+</table>
+<p>make &#x5358;&#x4F53;&#x3067;&#x306F;&#x3001;Make A B &#x3068;&#x3044;&#x3063;&#x305F;&#x3001;A &#x3092; B &#x306B;&#x3059;&#x308B;&#x3068;&#x3044;&#x3046;&#x5F62;&#x5F0F;&#x304C;&#x3088;&#x304F;&#x7528;&#x3044;&#x3089;&#x308C;&#x307E;&#x3059;&#x304C;&#x3001;
+&#x4ED6;&#x306E;&#x5358;&#x8A9E;&#x3068;&#x306E;&#x7D44;&#x307F;&#x5408;&#x308F;&#x305B;&#x3067;&#x898B;&#x3066;&#x307F;&#x308B;&#x3068;&#x3001;Make it possible,Make it easier &#x306A;&#x3069;&#x306E;&#x4F7F;&#x3044;&#x65B9;&#x304C;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h3 id="9-&#x4F4D;move">9 &#x4F4D;.move</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5358;&#x8A9E;&#x306E;&#x30BB;&#x30C3;&#x30C8;</th>
+<th style="text-align:left">&#x4EE3;&#x8868;&#x4F8B;</th>
+<th style="text-align:left">&#x610F;&#x5473;</th>
+<th style="text-align:left">&#x3000;&#x5B9F;&#x969B;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">move,from</td>
+<td style="text-align:left">Move A from B</td>
+<td style="text-align:left">B &#x304B;&#x3089; A &#x3092;&#x79FB;&#x52D5;&#x3055;&#x305B;&#x308B;</td>
+<td style="text-align:left">Move fix_fname from buffer.c</td>
+</tr>
+<tr>
+<td style="text-align:left">move,to</td>
+<td style="text-align:left">Move A to B</td>
+<td style="text-align:left">A &#x3092; B &#x306B;&#x79FB;&#x52D5;&#x3055;&#x305B;&#x308B;</td>
+<td style="text-align:left">Move strings to strings.js</td>
+</tr>
+<tr>
+<td style="text-align:left">move,in</td>
+<td style="text-align:left">Move A in B</td>
+<td style="text-align:left">B &#x5185;&#x306E; A &#x3092;&#x79FB;&#x52D5;&#x3055;&#x305B;&#x308B;</td>
+<td style="text-align:left">Move quotes in nav-main.html</td>
+</tr>
+</tbody>
+</table>
+<h3 id="10-&#x4F4D;dont">10 &#x4F4D;.don&apos;t</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5358;&#x8A9E;&#x306E;&#x30BB;&#x30C3;&#x30C8;</th>
+<th style="text-align:left">&#x4EE3;&#x8868;&#x4F8B;</th>
+<th style="text-align:left">&#x610F;&#x5473;</th>
+<th style="text-align:left">&#x3000;&#x5B9F;&#x969B;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">don&apos;t,use</td>
+<td style="text-align:left">Don&apos;t use A</td>
+<td style="text-align:left">A &#x3092;&#x7528;&#x3044;&#x306A;&#x3044;</td>
+<td style="text-align:left">Don&apos;t use &quot;assert_not_nil&quot;</td>
+</tr>
+</tbody>
+</table>
+<p>don&apos;t &#x306F;&#x3001;&#x69D8;&#x3005;&#x306A;&#x52D5;&#x8A5E;&#x3068;&#x7528;&#x3044;&#x3089;&#x308C;&#x307E;&#x3059;&#x304C;&#x3001;use &#x304C;&#x591A;&#x304F;&#x7528;&#x3044;&#x308C;&#x3066;&#x3044;&#x307E;&#x3057;&#x305F;&#x3002;</p>
+<h3 id="11-&#x4F4D;check">11 &#x4F4D;.check</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5358;&#x8A9E;&#x306E;&#x30BB;&#x30C3;&#x30C8;</th>
+<th style="text-align:left">&#x4EE3;&#x8868;&#x4F8B;</th>
+<th style="text-align:left">&#x610F;&#x5473;</th>
+<th style="text-align:left">&#x3000;&#x5B9F;&#x969B;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">check,for</td>
+<td style="text-align:left">Check for A</td>
+<td style="text-align:left">A &#x306B;&#x5BFE;&#x3059;&#x308B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;</td>
+<td style="text-align:left">Check for weak dependency correctly.</td>
+</tr>
+<tr>
+<td style="text-align:left">check,in</td>
+<td style="text-align:left">Check A in B</td>
+<td style="text-align:left">B &#x5185;&#x306E; A &#x3092;&#x30C1;&#x30A7;&#x30C3;&#x30AF;</td>
+<td style="text-align:left">check ID in os-release instead</td>
+</tr>
+<tr>
+<td style="text-align:left">chcek,fix</td>
+<td style="text-align:left">Fix A check</td>
+<td style="text-align:left">A &#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3092;&#x4FEE;&#x6B63;</td>
+<td style="text-align:left">Fix html extension check</td>
+</tr>
+<tr>
+<td style="text-align:left">check,add</td>
+<td style="text-align:left">Add A check</td>
+<td style="text-align:left">A &#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3092;&#x8FFD;&#x52A0;</td>
+<td style="text-align:left">Add null check</td>
+</tr>
+<tr>
+<td style="text-align:left">remove,check</td>
+<td style="text-align:left">Remove A check</td>
+<td style="text-align:left">A &#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3092;&#x9664;&#x53BB;</td>
+<td style="text-align:left">remove useless nil check</td>
+</tr>
+</tbody>
+</table>
+<p>check &#x306F;&#x3001;&#x7D50;&#x69CB;&#x540D;&#x8A5E;&#x7684;&#x306A;&#x4F7F;&#x308F;&#x308C;&#x65B9;&#x3082;&#x3057;&#x3066;&#x3044;&#x3066;&#x3001;if &#x6587;&#x306E;&#x4FEE;&#x6B63;&#x306B;&#x3088;&#x304F;&#x4F7F;&#x308F;&#x308C;&#x3066;&#x3044;&#x308B;&#x3088;&#x3046;&#x3067;&#x3059;&#x3002;</p>
+<h3 id="12-&#x4F4D;change">12 &#x4F4D;.change</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5358;&#x8A9E;&#x306E;&#x30BB;&#x30C3;&#x30C8;</th>
+<th style="text-align:left">&#x4EE3;&#x8868;&#x4F8B;</th>
+<th style="text-align:left">&#x610F;&#x5473;</th>
+<th style="text-align:left">&#x3000;&#x5B9F;&#x969B;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">change,to</td>
+<td style="text-align:left">Change A to B<br>Change to B</td>
+<td style="text-align:left">A &#x3092; B &#x306B;&#x5909;&#x66F4;<br>B &#x306B;&#x5909;&#x66F4;</td>
+<td style="text-align:left">Change copyright to 2013<br>change to lazy Unmount</td>
+</tr>
+<tr>
+<td style="text-align:left">change,for</td>
+<td style="text-align:left">Chage A for B</td>
+<td style="text-align:left">B &#x306B;&#x5BFE;&#x3057;&#x3066; A &#x3092;&#x5909;&#x66F4;</td>
+<td style="text-align:left">Change API for sending handles</td>
+</tr>
+<tr>
+<td style="text-align:left">change,in</td>
+<td style="text-align:left">Change A in B</td>
+<td style="text-align:left">B &#x4E2D;&#x306E; A &#x3092;&#x5909;&#x66F4;</td>
+<td style="text-align:left">change rm usage in docs</td>
+</tr>
+</tbody>
+</table>
+<h3 id="13-&#x4F4D;allow">13 &#x4F4D;.allow</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5358;&#x8A9E;&#x306E;&#x30BB;&#x30C3;&#x30C8;</th>
+<th style="text-align:left">&#x4EE3;&#x8868;&#x4F8B;</th>
+<th style="text-align:left">&#x610F;&#x5473;</th>
+<th style="text-align:left">&#x3000;&#x5B9F;&#x969B;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">allow,to</td>
+<td style="text-align:left">Allow A to B</td>
+<td style="text-align:left">A &#x304C; B &#x3059;&#x308B;&#x306E;&#x3092;&#x8A31;&#x3059;</td>
+<td style="text-align:left">Allow the user to drag faster</td>
+</tr>
+</tbody>
+</table>
+<h3 id="15-&#x4F4D;set">15 &#x4F4D;.set</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5358;&#x8A9E;&#x306E;&#x30BB;&#x30C3;&#x30C8;</th>
+<th style="text-align:left">&#x4EE3;&#x8868;&#x4F8B;</th>
+<th style="text-align:left">&#x610F;&#x5473;</th>
+<th style="text-align:left">&#x3000;&#x5B9F;&#x969B;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">set,to</td>
+<td style="text-align:left">Set A to B</td>
+<td style="text-align:left">A &#x3092; B &#x306B;&#x30BB;&#x30C3;&#x30C8;</td>
+<td style="text-align:left">Set default kernel to Gaussian.</td>
+</tr>
+<tr>
+<td style="text-align:left">set,for</td>
+<td style="text-align:left">Set A for B</td>
+<td style="text-align:left">B &#x306B;&#x5BFE;&#x3057;&#x3066; A &#x3092;&#x30BB;&#x30C3;&#x30C8;</td>
+<td style="text-align:left">Set release date for 0.10.1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="16-&#x4F4D;convert">16 &#x4F4D;.convert</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5358;&#x8A9E;&#x306E;&#x30BB;&#x30C3;&#x30C8;</th>
+<th style="text-align:left">&#x4EE3;&#x8868;&#x4F8B;</th>
+<th style="text-align:left">&#x610F;&#x5473;</th>
+<th style="text-align:left">&#x3000;&#x5B9F;&#x969B;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">convert,to</td>
+<td style="text-align:left">Convert A to B<br>Convert to B</td>
+<td style="text-align:left">A &#x3092; B &#x306B;&#x5909;&#x63DB;<br>B &#x306B;&#x5909;&#x63DB;</td>
+<td style="text-align:left">convert time to string<br>convert to boolean</td>
+</tr>
+</tbody>
+</table>
+<h3 id="17-&#x4F4D;rename">17 &#x4F4D;.rename</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5358;&#x8A9E;&#x306E;&#x30BB;&#x30C3;&#x30C8;</th>
+<th style="text-align:left">&#x4EE3;&#x8868;&#x4F8B;</th>
+<th style="text-align:left">&#x610F;&#x5473;</th>
+<th style="text-align:left">&#x3000;&#x5B9F;&#x969B;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">rename,to</td>
+<td style="text-align:left">Rename A to B</td>
+<td style="text-align:left">A &#x3092; B &#x306B;&#x30EA;&#x30CD;&#x30FC;&#x30E0;</td>
+<td style="text-align:left">Rename hero.html to jumbotron.html</td>
+</tr>
+</tbody>
+</table>
+<h3 id="20-&#x4F4D;avoid">20 &#x4F4D;.avoid</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5358;&#x8A9E;&#x306E;&#x30BB;&#x30C3;&#x30C8;</th>
+<th style="text-align:left">&#x4EE3;&#x8868;&#x4F8B;</th>
+<th style="text-align:left">&#x610F;&#x5473;</th>
+<th style="text-align:left">&#x3000;&#x5B9F;&#x969B;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">avoid,to</td>
+<td style="text-align:left">Avoid A to B<br>to avoid A</td>
+<td style="text-align:left">B &#x3059;&#x308B;&#x305F;&#x3081;&#x306B; A &#x3092;&#x907F;&#x3051;&#x308B;<br>A &#x3092;&#x907F;&#x3051;&#x308B;&#x305F;&#x3081;&#x306B;</td>
+<td style="text-align:left">avoid method call to compact<br>Remove methods to avoid warnings.</td>
+</tr>
+</tbody>
+</table>
+<p>&#x52D5;&#x8A5E;&#x5358;&#x4F53;&#x3067;&#x306F;, Avoid A &#x3084;&#x3001;Avoid ~ing &#x3067;&#x3088;&#x304F;&#x7528;&#x3044;&#x3089;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p>18 &#x4F4D;&#x306E; do &#x306F;&#x3001;&#x4E3B;&#x306B; do not &#x3067;&#x7528;&#x3044;&#x3089;&#x308C;&#x3066;&#x3044;&#x305F;&#x305F;&#x3081;&#x7701;&#x7565;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;
+7 &#x4F4D;&#x306E; merge&#x3001;13 &#x4F4D;&#x306E; cleanup&#x3001;19 &#x4F4D;&#x306E; revert &#x306F;&#x30BB;&#x30C3;&#x30C8;&#x3067;&#x3088;&#x304F;&#x4F7F;&#x308F;&#x308C;&#x3066;&#x3044;&#x308B;&#x5358;&#x8A9E;&#x306F;&#x3042;&#x307E;&#x308A;&#x51FA;&#x3066;&#x304D;&#x307E;&#x305B;&#x3093;&#x3067;&#x3057;&#x305F;&#x3002;</p>
+<h1 id="&#x89E3;&#x6790;&#x65B9;&#x6CD5;">&#x89E3;&#x6790;&#x65B9;&#x6CD5;</h1>
+<h2 id="&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x53CE;&#x96C6;">&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x53CE;&#x96C6;</h2>
+<p>github &#x4E0A;&#x306E;&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x304B;&#x3089;&#x3001;&#x4E00;&#x62EC;&#x3067;&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;&#x306E;&#x306B;&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x53C2;&#x8003;&#x306B;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;
+<strong>&#x53C2;&#x8003; URL</strong>
+<a href="https://github.com/minamijoyo/commit-crawler" target="_blank">https://github.com/minamijoyo/commit-crawler</a></p>
+<p>github API &#x306E;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x30C8;&#x30FC;&#x30AF;&#x30F3;&#x3092;&#x767B;&#x9332;&#x3059;&#x308B;&#x3060;&#x3051;&#x3067;&#x3001;&#x4E00;&#x62EC;&#x3067;&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="&#x89E3;&#x6790;&#x3068;&#x53EF;&#x8996;&#x5316;">&#x89E3;&#x6790;&#x3068;&#x53EF;&#x8996;&#x5316;</h2>
+<p>&#x82F1;&#x8A9E;&#x306E;&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x306A;&#x306E;&#x3067;&#x3001;&#x65E5;&#x672C;&#x8A9E;&#x3068;&#x306F;&#x9055;&#x3044;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x3067;&#x533A;&#x5207;&#x308B;&#x3060;&#x3051;&#x3067;&#x7C21;&#x5358;&#x306B;&#x5358;&#x8A9E;&#x3054;&#x3068;&#x306B;&#x5206;&#x89E3;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;
+&#x5206;&#x89E3;&#x3057;&#x305F;&#x5358;&#x8A9E;&#x306E;&#x51FA;&#x73FE;&#x983B;&#x5EA6;&#x3092;&#x30AB;&#x30A6;&#x30F3;&#x30C8;&#x3059;&#x308B;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092; python &#x3067;&#x66F8;&#x304D;&#x307E;&#x3057;&#x305F;&#x3002;
+&#x305F;&#x3060;&#x5358;&#x7D14;&#x306B;&#x983B;&#x5EA6;&#x306E;&#x591A;&#x3044;&#x5358;&#x8A9E;&#x3092;&#x5206;&#x6790;&#x3057;&#x3066;&#x3044;&#x3063;&#x3066;&#x3082;&#x3001;a &#x3084; the &#x306A;&#x3069;&#x306E;&#x610F;&#x5473;&#x306E;&#x306A;&#x3044;&#x5358;&#x8A9E;&#x304C;&#x591A;&#x3044;&#x306E;&#x3067;&#x3001;&#x3042;&#x308B;&#x7A0B;&#x5EA6;&#x7D5E;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;&#x81EA;&#x7136;&#x8A00;&#x8A9E;&#x51E6;&#x7406;&#x306E;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x3067;&#x3042;&#x308B; nltk &#x3092;&#x7528;&#x3044;&#x3066;&#x3001;&#x54C1;&#x8A5E;&#x306E;&#x5206;&#x6790;&#x3092;&#x3057;&#x3001;&#x540D;&#x8A5E;&#x3068;&#x52D5;&#x8A5E;&#x306E;&#x62BD;&#x51FA;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;&#x62BD;&#x51FA;&#x3057;&#x305F;&#x7D50;&#x679C;&#x306E;&#x30EF;&#x30FC;&#x30C9;&#x30AF;&#x30E9;&#x30A6;&#x30C9;&#x8868;&#x793A;&#x306F;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x53C2;&#x8003; URL &#x3067;&#x7C21;&#x5358;&#x306B;&#x3067;&#x304D;&#x307E;&#x3057;&#x305F;&#x3002;</p>
+<p><strong>&#x53C2;&#x8003; URL</strong>
+<a href="http://yusuke0h.hatenablog.com/entry/2013/10/15/123832" target="_blank">&#x82F1;&#x8A9E;&#x524D;&#x51E6;&#x7406;&#x30B5;&#x30FC;&#x30D9;&#x30A4;</a>
+<a href="http://moguranosenshi.hatenablog.com/entry/2014/09/14/nltk%E3%81%A8pytagcloud%E3%81%A7%E8%8B%B1%E8%AA%9E%E3%81%AE%E3%83%AF%E3%83%BC%E3%83%89%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89" target="_blank">nltk &#x3068; pytagcloud &#x3067;&#x82F1;&#x8A9E;&#x306E;&#x30EF;&#x30FC;&#x30C9;&#x30AF;&#x30E9;&#x30A6;&#x30C9;</a></p>
+<h1 id="&#x611F;&#x60F3;">&#x611F;&#x60F3;</h1>
+<p>github &#x4E0A;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x306F;&#x89E3;&#x6790;&#x3057;&#x3066;&#x307F;&#x308B;&#x3068;&#x3001;&#x30B7;&#x30F3;&#x30D7;&#x30EB;&#x306A;&#x5358;&#x8A9E;&#x304C;&#x7528;&#x3044;&#x3089;&#x308C;&#x3066;&#x304A;&#x308A;&#x3001;
+&#x5C0F;&#x96E3;&#x3057;&#x3044;&#x5358;&#x8A9E;&#x306F;&#x3042;&#x307E;&#x308A;&#x898B;&#x53D7;&#x3051;&#x3089;&#x308C;&#x307E;&#x305B;&#x3093;&#x3002;
+&#x4E2D;&#x5B66;&#x6821;&#x3067;&#x7FD2;&#x3046;&#x5358;&#x8A9E;&#x3068;&#x6587;&#x6CD5;&#x3070;&#x304B;&#x308A;&#x3067;&#x3059;&#x3057;&#x3001;&#x66F8;&#x304F;&#x3068;&#x304D;&#x306F;&#x8003;&#x3048;&#x3059;&#x304E;&#x305A;&#x306B;&#x66F8;&#x3044;&#x3066;&#x3088;&#x3055;&#x305D;&#x3046;&#x3067;&#x3059;&#x3002;
+&#x3061;&#x306A;&#x307F;&#x306B;&#x3001;&#x300C;Yes&#x300D;&#x3084;&#x3001;&#x300C;Oops&#x300D;&#x3060;&#x3051;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x3082;&#x3042;&#x3063;&#x305F;&#x308A;&#x3057;&#x307E;&#x3059;&#x3002;&#x7B11;</p>
+<h2 id="&#x5206;&#x6790;&#x306B;&#x95A2;&#x3057;&#x3066;">&#x5206;&#x6790;&#x306B;&#x95A2;&#x3057;&#x3066;</h2>
+<p>Merge Branch &#x3084; Merge pull request &#x306A;&#x3069;&#x306E; github &#x304C;&#x81EA;&#x52D5;&#x3067;&#x751F;&#x6210;&#x3059;&#x308B;&#x3088;&#x3046;&#x306A;&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x306F;&#x9664;&#x3044;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x3057;&#x304B;&#x3057;&#x3001;&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x3054;&#x3068;&#x306B;&#x7279;&#x6709;&#x306E;&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x304C;&#x5B58;&#x5728;
+&#x307E;&#x305F;&#x3001;use &#x3084;&#x3001;support &#x306A;&#x3069;&#x306F;&#x540D;&#x8A5E;&#x3068;&#x3057;&#x3066;&#x3082;&#x7528;&#x3044;&#x3089;&#x308C;&#x308B;&#x305F;&#x3081;&#x3001;&#x52D5;&#x8A5E;&#x306E;&#x7528;&#x6CD5;&#x3068;&#x3057;&#x3066;&#x306E;&#x9806;&#x4F4D;&#x306F;&#x5909;&#x308F;&#x3063;&#x3066;&#x304F;&#x308B;&#x53EF;&#x80FD;&#x6027;&#x304C;&#x5927;&#x3044;&#x306B;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;
+&#x4ECA;&#x56DE;&#x306F;&#x884C;&#x3044;&#x307E;&#x305B;&#x3093;&#x3067;&#x3057;&#x305F;&#x304C;&#x3001;&#x5F62;&#x5BB9;&#x8A5E;&#x3084;&#x526F;&#x8A5E;&#x306B;&#x95A2;&#x3057;&#x3066;&#x5206;&#x6790;&#x3059;&#x308B;&#x306E;&#x3082;&#x9762;&#x767D;&#x305D;&#x3046;&#x3067;&#x3059;&#x3002;
+&#x3068;&#x3044;&#x3046;&#x3053;&#x3068;&#x3067;&#x3001;&#x756A;&#x5916;&#x7DE8;&#x306B;&#x7D50;&#x679C;&#x3092;&#x8F09;&#x305B;&#x305F;&#x3044;&#x3068;&#x601D;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="&#x756A;&#x5916;&#x7DE8;-1&#x983B;&#x51FA;&#x5F62;&#x5BB9;&#x8A5E;-top20">(&#x756A;&#x5916;&#x7DE8; 1)&#x983B;&#x51FA;&#x5F62;&#x5BB9;&#x8A5E; TOP20</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x9806;&#x4F4D;</th>
+<th style="text-align:left">&#x82F1;&#x5358;&#x8A9E;</th>
+<th style="text-align:left">&#x610F;&#x5473;</th>
+<th style="text-align:left">&#x5B9F;&#x969B;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">new</td>
+<td style="text-align:left">&#x65B0;&#x3057;&#x3044;</td>
+<td style="text-align:left">New URL.</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">unused</td>
+<td style="text-align:left">&#x4F7F;&#x7528;&#x3055;&#x308C;&#x3066;&#x3044;&#x306A;&#x3044;</td>
+<td style="text-align:left">Remove unused $$</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left">static</td>
+<td style="text-align:left">&#x9759;&#x7684;&#x306A;</td>
+<td style="text-align:left">Build static executable.</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left">empty</td>
+<td style="text-align:left">&#x7A7A;&#x306E;</td>
+<td style="text-align:left">Add empty line</td>
+</tr>
+<tr>
+<td style="text-align:left">5</td>
+<td style="text-align:left">old</td>
+<td style="text-align:left">&#x53E4;&#x3044;</td>
+<td style="text-align:left">Fix old links</td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left">small</td>
+<td style="text-align:left">&#x5C0F;&#x3055;&#x306A;</td>
+<td style="text-align:left">Small typo</td>
+</tr>
+<tr>
+<td style="text-align:left">7</td>
+<td style="text-align:left">initial</td>
+<td style="text-align:left">&#x6700;&#x521D;&#x306E;</td>
+<td style="text-align:left">Initial commit</td>
+</tr>
+<tr>
+<td style="text-align:left">8</td>
+<td style="text-align:left">local</td>
+<td style="text-align:left">&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x306E;</td>
+<td style="text-align:left">Updates local dev guide</td>
+</tr>
+<tr>
+<td style="text-align:left">9</td>
+<td style="text-align:left">wrong</td>
+<td style="text-align:left">&#x9593;&#x9055;&#x3063;&#x305F;</td>
+<td style="text-align:left">Fix wrong id</td>
+</tr>
+<tr>
+<td style="text-align:left">10</td>
+<td style="text-align:left">common</td>
+<td style="text-align:left">&#x5171;&#x901A;&#x306E;</td>
+<td style="text-align:left">Optimize the most common resolver case.</td>
+</tr>
+<tr>
+<td style="text-align:left">11</td>
+<td style="text-align:left">other</td>
+<td style="text-align:left">&#x4ED6;&#x306E;</td>
+<td style="text-align:left">Change other example fields</td>
+</tr>
+<tr>
+<td style="text-align:left">12</td>
+<td style="text-align:left">dead</td>
+<td style="text-align:left">&#x6B7B;&#x3093;&#x3060;</td>
+<td style="text-align:left">Remove dead link</td>
+</tr>
+<tr>
+<td style="text-align:left">13</td>
+<td style="text-align:left">rid</td>
+<td style="text-align:left">(get rid of &#x3067;)<br>&#x53D6;&#x308A;&#x9664;&#x304F;</td>
+<td style="text-align:left">get rid of EmptyComponent</td>
+</tr>
+<tr>
+<td style="text-align:left">14</td>
+<td style="text-align:left">possible</td>
+<td style="text-align:left">&#x53EF;&#x80FD;&#x6027;&#x306E;&#x3042;&#x308B;</td>
+<td style="text-align:left">possible regression fix</td>
+</tr>
+<tr>
+<td style="text-align:left">15</td>
+<td style="text-align:left">unneeded</td>
+<td style="text-align:left">&#x4E0D;&#x5FC5;&#x8981;&#x306A;</td>
+<td style="text-align:left">Remove unneeded @</td>
+</tr>
+<tr>
+<td style="text-align:left">16</td>
+<td style="text-align:left">same</td>
+<td style="text-align:left">&#x540C;&#x3058;</td>
+<td style="text-align:left">Use same colors for disabled buttons</td>
+</tr>
+<tr>
+<td style="text-align:left">17</td>
+<td style="text-align:left">global</td>
+<td style="text-align:left">&#x30B0;&#x30ED;&#x30FC;&#x30D0;&#x30EB;&#x306E;</td>
+<td style="text-align:left">Fix global leaks</td>
+</tr>
+<tr>
+<td style="text-align:left">18</td>
+<td style="text-align:left">invalid</td>
+<td style="text-align:left">&#x4E0D;&#x6B63;&#x306A;</td>
+<td style="text-align:left">Fix invalid timer test</td>
+</tr>
+<tr>
+<td style="text-align:left">19</td>
+<td style="text-align:left">specific</td>
+<td style="text-align:left">&#x7279;&#x5B9A;&#x306E;</td>
+<td style="text-align:left">Remove linux specific calls</td>
+</tr>
+<tr>
+<td style="text-align:left">20</td>
+<td style="text-align:left">extra</td>
+<td style="text-align:left">&#x4F59;&#x5206;&#x306A;</td>
+<td style="text-align:left">Remove extra whitespace</td>
+</tr>
+</tbody>
+</table>
+<p>&#x7C21;&#x5358;&#x306A;&#x82F1;&#x5358;&#x8A9E;&#x3070;&#x304B;&#x308A;&#x3067;&#x3059;&#x306D;&#x3002;
+rid &#x306F;&#x3001;<strong>get rid of</strong>&#x3067;&#x3088;&#x304F;&#x4F7F;&#x308F;&#x308C;&#x308B;&#x3088;&#x3046;&#x3067;&#x3059;(&#x5F62;&#x5BB9;&#x8A5E;&#x3067;&#x306F;&#x306A;&#x3044;&#x3067;&#x3059;&#x304C;)&#x3002;
+&#x307E;&#x305F;&#x3001;<strong>possible</strong>&#x306F; &#x300C;possible + (&#x4F55;&#x304B;&#x60AA;&#x3044;&#x3053;&#x3068;&#x3001;&#x4F8B;&#x3048;&#x3070; crash &#x3084; memory leak &#x306A;&#x3069;)&#x3092;&#x4FEE;&#x6B63;&#x3059;&#x308B;&#x300D;&#x3068;&#x3044;&#x3046;&#x6587;&#x8108;&#x3067;&#x4F7F;&#x308F;&#x308C;&#x3066;&#x3044;&#x307E;&#x3057;&#x305F;&#x3002;&#x4ED6;&#x306B;&#x3082;&#x3001;<strong>if possible</strong> (&#x6587;&#x672B;&#x306B;&#x4ED8;&#x3051;&#x3066;: &#x53EF;&#x80FD;&#x306A;&#x3089;)&#x3084;&#x3001;<strong>as early as possible</strong>(&#x3067;&#x304D;&#x308B;&#x3060;&#x3051;&#x65E9;&#x304F;)&#x3001;<strong>make it possible</strong>(&#x53EF;&#x80FD;&#x306B;&#x3059;&#x308B;)&#x306A;&#x3069;&#x3067;&#x4F7F;&#x308F;&#x308C;&#x3066;&#x3044;&#x307E;&#x3057;&#x305F;&#x3002;</p>
+<p>&#x3061;&#x306A;&#x307F;&#x306B;&#x3001;enable,variable,disable,clear,separate &#x3082;&#x5165;&#x3063;&#x3066;&#x3044;&#x307E;&#x3057;&#x305F;&#x304C;&#x3001;&#x5F62;&#x5BB9;&#x8A5E;&#x4EE5;&#x5916;&#x306E;&#x4F7F;&#x308F;&#x308C;&#x65B9;&#x306E;&#x65B9;&#x304C;&#x591A;&#x3044;&#x3088;&#x3046;&#x306A;&#x306E;&#x3067;&#x9664;&#x3044;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="&#x756A;&#x5916;&#x7DE8;-2&#x983B;&#x51FA;&#x540D;&#x8A5E;-top20">(&#x756A;&#x5916;&#x7DE8; 2)&#x983B;&#x51FA;&#x540D;&#x8A5E; TOP20</h2>
+<p>&#x540D;&#x8A5E;&#x3082;&#x4E26;&#x3079;&#x3066;&#x307F;&#x307E;&#x3059;&#x3002;&#x30BF;&#x30A4;&#x30DD;&#x591A;&#x3044;&#x3067;&#x3059;&#x306D;&#x3002;&#x7B11;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x9806;&#x4F4D;</th>
+<th style="text-align:left">&#x82F1;&#x5358;&#x8A9E;</th>
+<th style="text-align:left">&#x610F;&#x5473;</th>
+<th style="text-align:left">&#x51FA;&#x73FE;&#x56DE;&#x6570;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">test/tests</td>
+<td style="text-align:left">&#x30C6;&#x30B9;&#x30C8;</td>
+<td style="text-align:left">30306/20073</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">code</td>
+<td style="text-align:left">&#x30B3;&#x30FC;&#x30C9;</td>
+<td style="text-align:left">25839</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left">error</td>
+<td style="text-align:left">&#x30A8;&#x30E9;&#x30FC;</td>
+<td style="text-align:left">22700</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left">function/functions</td>
+<td style="text-align:left">&#x30D5;&#x30A1;&#x30F3;&#x30AF;&#x30B7;&#x30E7;&#x30F3;</td>
+<td style="text-align:left">14464/9640</td>
+</tr>
+<tr>
+<td style="text-align:left">5</td>
+<td style="text-align:left">driver</td>
+<td style="text-align:left">&#x30C9;&#x30E9;&#x30A4;&#x30D0;&#x30FC;</td>
+<td style="text-align:left">14386</td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left">version</td>
+<td style="text-align:left">&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;</td>
+<td style="text-align:left">13231</td>
+</tr>
+<tr>
+<td style="text-align:left">7</td>
+<td style="text-align:left">typo</td>
+<td style="text-align:left">&#x30BF;&#x30A4;&#x30DD;</td>
+<td style="text-align:left">12167</td>
+</tr>
+<tr>
+<td style="text-align:left">8</td>
+<td style="text-align:left">docs</td>
+<td style="text-align:left">&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;</td>
+<td style="text-align:left">11865</td>
+</tr>
+<tr>
+<td style="text-align:left">9</td>
+<td style="text-align:left">bug</td>
+<td style="text-align:left">&#x30D0;&#x30B0;</td>
+<td style="text-align:left">11518</td>
+</tr>
+<tr>
+<td style="text-align:left">10</td>
+<td style="text-align:left">return</td>
+<td style="text-align:left">&#x30EA;&#x30BF;&#x30FC;&#x30F3;</td>
+<td style="text-align:left">11296</td>
+</tr>
+<tr>
+<td style="text-align:left">11</td>
+<td style="text-align:left">tag</td>
+<td style="text-align:left">&#x30BF;&#x30B0;</td>
+<td style="text-align:left">14352</td>
+</tr>
+<tr>
+<td style="text-align:left">12</td>
+<td style="text-align:left">default</td>
+<td style="text-align:left">&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;</td>
+<td style="text-align:left">10556</td>
+</tr>
+<tr>
+<td style="text-align:left">13</td>
+<td style="text-align:left">device</td>
+<td style="text-align:left">&#x30C7;&#x30D0;&#x30A4;&#x30B9;</td>
+<td style="text-align:left">10381</td>
+</tr>
+<tr>
+<td style="text-align:left">14</td>
+<td style="text-align:left">handling</td>
+<td style="text-align:left">&#x30CF;&#x30F3;&#x30C9;&#x30EA;&#x30F3;&#x30B0;</td>
+<td style="text-align:left">10147</td>
+</tr>
+<tr>
+<td style="text-align:left">15</td>
+<td style="text-align:left">files</td>
+<td style="text-align:left">&#x30D5;&#x30A1;&#x30A4;&#x30EB;</td>
+<td style="text-align:left">9195</td>
+</tr>
+<tr>
+<td style="text-align:left">16</td>
+<td style="text-align:left">type</td>
+<td style="text-align:left">&#x30BF;&#x30A4;&#x30D7;</td>
+<td style="text-align:left">9166</td>
+</tr>
+<tr>
+<td style="text-align:left">17</td>
+<td style="text-align:left">auto</td>
+<td style="text-align:left">&#x30AA;&#x30FC;&#x30C8;</td>
+<td style="text-align:left">9268</td>
+</tr>
+<tr>
+<td style="text-align:left">18</td>
+<td style="text-align:left">name</td>
+<td style="text-align:left">&#x540D;&#x524D;</td>
+<td style="text-align:left">8765</td>
+</tr>
+<tr>
+<td style="text-align:left">19</td>
+<td style="text-align:left">data</td>
+<td style="text-align:left">&#x30C7;&#x30FC;&#x30BF;</td>
+<td style="text-align:left">8511</td>
+</tr>
+<tr>
+<td style="text-align:left">20</td>
+<td style="text-align:left">warning</td>
+<td style="text-align:left">&#x8B66;&#x544A;</td>
+<td style="text-align:left">8448</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>&#x7565;&#x8A9E;</th>
+<th>&#x5143;&#x306E;&#x8A9E;</th>
+<th>&#x610F;&#x5473;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AFAICT</td>
+<td>As far as I can tell</td>
+<td>&#x5206;&#x304B;&#x308B;&#x9650;&#x308A;&#x3067;&#x306F; &#x25CB;&#x25CB;</td>
+</tr>
+<tr>
+<td>AFAIK</td>
+<td>As far as I know</td>
+<td>&#x77E5;&#x308B;&#x9650;&#x308A;&#x3067;&#x306F; &#x25CB;&#x25CB;</td>
+</tr>
+<tr>
+<td>AKA, aka, a.k.a.</td>
+<td>Also known as</td>
+<td>&#x25CB;&#x25CB; &#x3068;&#x3057;&#x3066;&#x3082;&#x77E5;&#x3089;&#x308C;&#x308B;</td>
+</tr>
+<tr>
+<td>ASAP</td>
+<td>As soon as possible</td>
+<td>&#x3067;&#x304D;&#x308B;&#x9650;&#x308A;&#x65E9;&#x304F;</td>
+</tr>
+<tr>
+<td>BTW</td>
+<td>By the way</td>
+<td>&#x3068;&#x3053;&#x308D;&#x3067;</td>
+</tr>
+<tr>
+<td>c.f., cf.</td>
+<td>&#x30E9;&#x30C6;&#x30F3;&#x8A9E; confer / &#x82F1;&#x8A9E; compare</td>
+<td>&#x25CB;&#x25CB; &#x3092;&#x53C2;&#x7167;</td>
+</tr>
+<tr>
+<td>e.g., E.g.</td>
+<td>&#x30E9;&#x30C6;&#x30F3;&#x8A9E; exempli gratia / &#x82F1;&#x8A9E; for example</td>
+<td>&#x305F;&#x3068;&#x3048;&#x3070;</td>
+</tr>
+<tr>
+<td>ETA</td>
+<td>Estimated time of arrival</td>
+<td>&#xFF08;&#x4F5C;&#x696D;&#x306E;&#xFF09;&#x5B8C;&#x4E86;&#x4E88;&#x5B9A;&#x6642;&#x523B;&#x3000;&#xFF08;&#x7528;&#x4F8B;&#x306F;<a href="http://qiita.com/items/86c3a09d17792ab62dfe#comment-54f3d7872ba953941e7d" target="_blank">&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x3092;&#x53C2;&#x7167;</a>&#xFF09;</td>
+</tr>
+<tr>
+<td>FTW</td>
+<td>For the win</td>
+<td>&#x3014;&#x4F55;&#x304B;&#x826F;&#x3044;&#x6848;&#x3092;&#x6319;&#x3052;&#x3066;&#x3015;&#x3053;&#x308C;&#x3067;&#x6C7A;&#x307E;&#x308A;&#xFF1B;&#x3053;&#x308C;&#x3067;&#x3088;&#x3057;</td>
+</tr>
+<tr>
+<td>FWIW</td>
+<td>For what it&apos;s worth</td>
+<td>&#x5F79;&#x306B;&#x7ACB;&#x3064;&#x304B;&#x3069;&#x3046;&#x304B;&#x306F;&#x5206;&#x304B;&#x3089;&#x306A;&#x3044;&#x304C;</td>
+</tr>
+<tr>
+<td>FYA</td>
+<td>For your action</td>
+<td>&#x8981;&#x5BFE;&#x5FDC;&#xFF1B;&#x8981;&#x8FD4;&#x4FE1;</td>
+</tr>
+<tr>
+<td>FYI</td>
+<td>For your information</td>
+<td>&#x53C2;&#x8003;&#xFF1B;&#x3054;&#x53C2;&#x8003;&#x307E;&#x3067;&#x306B;</td>
+</tr>
+<tr>
+<td>HTH</td>
+<td>Happy to help</td>
+<td>&#xFF08;&#x7528;&#x4F8B;&#x306F;<a href="http://qiita.com/items/86c3a09d17792ab62dfe#comment-54f3d7872ba953941e7d" target="_blank">&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x3092;&#x53C2;&#x7167;</a>&#xFF09;</td>
+</tr>
+<tr>
+<td>idk, IDK</td>
+<td>I don&apos;t know</td>
+<td>&#x77E5;&#x3089;&#x306A;&#x3044;&#xFF1B;&#x5206;&#x304B;&#x3089;&#x306A;&#x3044;</td>
+</tr>
+<tr>
+<td>i.e., I.e.</td>
+<td>&#x30E9;&#x30C6;&#x30F3;&#x8A9E; id est / &#x82F1;&#x8A9E; that is</td>
+<td>&#x3059;&#x306A;&#x308F;&#x3061;</td>
+</tr>
+<tr>
+<td>IIRC</td>
+<td>If I remember [recall] correctly</td>
+<td>&#x8A18;&#x61B6;&#x304C;&#x6B63;&#x3057;&#x3051;&#x308C;&#x3070; &#x25CB;&#x25CB;</td>
+</tr>
+<tr>
+<td>IIUC</td>
+<td>If I understand correctly</td>
+<td>&#x3014;&#x76F8;&#x624B;&#x306E;&#x767A;&#x8A00;&#x3092;&#x53D7;&#x3051;&#x3066;&#x3015;&#x79C1;&#x306E;&#x7406;&#x89E3;&#x304C;&#x6B63;&#x3057;&#x3051;&#x308C;&#x3070;</td>
+</tr>
+<tr>
+<td>IMO, IMHO</td>
+<td>In my (humble) opinion</td>
+<td>&#x3014;&#x3066;&#x3044;&#x306D;&#x3044;&#x306B;&#x3015;&#x25CB;&#x25CB; &#x3060;&#x3068;&#x601D;&#x3044;&#x307E;&#x3059;</td>
+</tr>
+<tr>
+<td>LGTM</td>
+<td>Looks good to me</td>
+<td>&#x3014;&#x63D0;&#x6848;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x3015;&#x3044;&#x3044;&#x3068;&#x601D;&#x3046;&#xFF1B;&#x554F;&#x984C;&#x306A;&#x3044;&#x3068;&#x601D;&#x3046;&#xFF1B;&#x3014;&#x30B3;&#x30FC;&#x30C9;&#x30EC;&#x30D3;&#x30E5;&#x30A2;&#x30FC;&#x304C;&#x3001;&#x554F;&#x984C;&#x306A;&#x3044;&#x30B3;&#x30FC;&#x30C9;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x3015;&#x30EC;&#x30D3;&#x30E5;&#x30FC;&#x7D42;&#x4E86;&#xFF1B;&#xFF08;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#xFF09;&#x627F;&#x8A8D;</td>
+</tr>
+<tr>
+<td>LOL, lol</td>
+<td>Laugh out loud</td>
+<td>&#x3014;&#x304F;&#x3060;&#x3051;&#x3066;&#x3015;www&#xFF1B;&#xFF08;&#x7B11;&#xFF09;</td>
+</tr>
+<tr>
+<td>NA, N/A</td>
+<td>Not applicable; not available</td>
+<td>&#x3014;&#x8868;&#x306A;&#x3069;&#x3067;&#x3001;&#x9805;&#x76EE;&#x306E;&#x7D44;&#x307F;&#x5408;&#x308F;&#x305B;&#x304C;&#x7121;&#x52B9;&#x306A;&#x6B04;&#x306B;&#x8A18;&#x8F09;&#x3057;&#x3066;&#x3015;&#x8A72;&#x5F53;&#x306A;&#x3057;&#xFF1B;&#x3014;&#x8868;&#x306A;&#x3069;&#x3067;&#x3001;&#x307E;&#x3060;&#x5024;&#x304C;&#x306A;&#x3044;&#x6B04;&#x306B;&#x8A18;&#x8F09;&#x3057;&#x3066;&#x3015;&#x8A72;&#x5F53;&#x5024;&#x306A;&#x3057;</td>
+</tr>
+<tr>
+<td>NB, N.B.</td>
+<td>&#x30E9;&#x30C6;&#x30F3;&#x8A9E; nota bene / &#x82F1;&#x8A9E; note well</td>
+<td>&#x3014;&#x901A;&#x4F8B;&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x306E;&#x5148;&#x982D;&#x3067;&#x3015;&#x7279;&#x306B;&#x6CE8;&#x610F;&#x305B;&#x3088;</td>
+</tr>
+<tr>
+<td>NP, np</td>
+<td>No problem</td>
+<td>&#x3014;&#x4F9D;&#x983C;&#x30FB;&#x8B1D;&#x7F6A;&#x306A;&#x3069;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x304F;&#x3060;&#x3051;&#x3066;&#x3015;&#xFF08;&#x554F;&#x984C;&#x306A;&#x3044;&#x304B;&#x3089;&#xFF09;&#x6C17;&#x306B;&#x3057;&#x306A;&#x3044;&#x3067;&#xFF1B;&#x5927;&#x4E08;&#x592B;&#x3014;&#x611F;&#x8B1D;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x304F;&#x3060;&#x3051;&#x3066;&#x3015;&#x3069;&#x3046;&#x3044;&#x305F;&#x3057;&#x307E;&#x3057;&#x3066;</td>
+</tr>
+<tr>
+<td>OTOH</td>
+<td>On the other hand</td>
+<td>&#x3082;&#x3046;&#x4E00;&#x65B9;&#x3067;&#x306F;&#x3001;&#x3053;&#x308C;&#x306B;&#x53CD;&#x3057;&#x3066;</td>
+</tr>
+<tr>
+<td>PTAL</td>
+<td>Please take another look</td>
+<td>&#x3014;&#x518D;&#x30EC;&#x30D3;&#x30E5;&#x30FC;&#x306E;&#x8981;&#x6C42;&#x306A;&#x3069;&#x3067;&#x3015;&#x518D;&#x5EA6;&#x3054;&#x78BA;&#x8A8D;&#x304F;&#x3060;&#x3055;&#x3044;</td>
+</tr>
+<tr>
+<td>PR</td>
+<td>Pull request</td>
+<td>&#x30D7;&#x30EB;&#x30EA;&#x30AF;&#x30A8;&#x30B9;&#x30C8;</td>
+</tr>
+<tr>
+<td>RFC</td>
+<td>Request for comments</td>
+<td>&#x3014;&#x304A;&#x3082;&#x306B; issue &#x306E;&#x30BF;&#x30B0;&#x3068;&#x3057;&#x3066;&#x3015;&#x610F;&#x898B;&#x52DF;&#x96C6;</td>
+</tr>
+<tr>
+<td>ROFL, rofl</td>
+<td>Rolling on the floor laughing</td>
+<td>&#x3014;&#x304F;&#x3060;&#x3051;&#x3066;&#x3015;www&#xFF1B;&#xFF08;&#x7B11;&#xFF09;</td>
+</tr>
+<tr>
+<td>RTFM</td>
+<td>Read the fucking manual</td>
+<td>&#x3014;&#x4E71;&#x66B4;&#x306B;&#x3015;&#x30DE;&#x30CB;&#x30E5;&#x30A2;&#x30EB;&#x3092;&#x8AAD;&#x3081;</td>
+</tr>
+<tr>
+<td>TBA</td>
+<td>To be advised</td>
+<td>&#x3042;&#x3068;&#x3067;&#x9023;&#x7D61;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td>TBA</td>
+<td>To be announced</td>
+<td>&#x3042;&#x3068;&#x3067;&#x767A;&#x8868;&#x3059;&#x308B;</td>
+</tr>
+<tr>
+<td>TBD</td>
+<td>To be determined</td>
+<td>&#x3042;&#x3068;&#x3067;&#x6C7A;&#x3081;&#x308B;</td>
+</tr>
+<tr>
+<td>TBW</td>
+<td>To be written</td>
+<td>&#x3042;&#x3068;&#x3067;&#x66F8;&#x304F;</td>
+</tr>
+<tr>
+<td>TLDR, tldr, TL;DR, tl;dr, TL/DR, tl/dr</td>
+<td>Too long, didn&apos;t read</td>
+<td>&#x9577;&#x3059;&#x304E;&#x308B;&#x306E;&#x3067;&#x8AAD;&#x3093;&#x3067;&#x3044;&#x306A;&#x3044;&#xFF1B;&#xFF08;&#x9577;&#x3044;&#x6587;&#x3092;&#x8AAD;&#x307F;&#x305F;&#x304F;&#x306A;&#x3044;&#x4EBA;&#x5411;&#x3051;&#x306E;&#xFF09;&#x8981;&#x7D04;</td>
+</tr>
+<tr>
+<td>UTSL</td>
+<td>Use the source, Luke</td>
+<td>&#x3014;&#x304F;&#x3060;&#x3051;&#x3066;&#x3015;&#x30BD;&#x30FC;&#x30B9;&#x3092;&#x8AAD;&#x3081;&#xFF08;&#x30B9;&#x30BF;&#x30FC;&#x30FB;&#x30A6;&#x30A9;&#x30FC;&#x30BA;&#x306E;&#x30BB;&#x30EA;&#x30D5;&#x3068;&#x304B;&#x3051;&#x305F;&#x8A00;&#x8449;&#x904A;&#x3073;&#xFF09;</td>
+</tr>
+<tr>
+<td>w/</td>
+<td>with</td>
+<td>&#xFF08;with &#x306E;&#x7701;&#x7565;&#x5F62;&#xFF09;</td>
+</tr>
+<tr>
+<td>w/o</td>
+<td>without</td>
+<td>&#xFF08;without &#x306E;&#x7701;&#x7565;&#x5F62;&#xFF09;</td>
+</tr>
+<tr>
+<td>WIP</td>
+<td>Work in progress</td>
+<td>&#x4F5C;&#x696D;&#x4E2D;</td>
+</tr>
+<tr>
+<td>wrt, w.r.t., WRT</td>
+<td>With regard [respect, reference] to</td>
+<td>&#x301C;&#x306B;&#x95A2;&#x3057;&#x3066;&#x8A00;&#x3048;&#x3070;</td>
+</tr>
+<tr>
+<td>WTF, wtf</td>
+<td>What the fuck</td>
+<td>&#x3014;&#x60F3;&#x5B9A;&#x5916;&#x306E;&#x4E8B;&#x30FB;&#x3082;&#x306E;&#x306B;&#x304F;&#x3060;&#x3051;&#x3066;&#x3015;&#x306A;&#x3093;&#x3066;&#x3053;&#x3063;&#x305F;&#xFF1B;&#x3069;&#x3046;&#x3059;&#x308A;&#x3083;&#x3044;&#x3044;&#x3093;&#x3060;&#xFF1B;&#x30DE;&#x30B8;&#x304B;&#x3088;</td>
+</tr>
+<tr>
+<td>XD</td>
+<td>&#x9854;&#x6587;&#x5B57;&#xFF1A;90 &#x5EA6;&#x53F3;&#x306B;&#x56DE;&#x3059;&#x3068;&#x3001;&#x76EE;&#x3092;&#x3064;&#x3076;&#x3063;&#x3066;&#x5927;&#x304D;&#x304F;&#x53E3;&#x3092;&#x958B;&#x3051;&#x305F;&#x7B11;&#x9854;&#x306B;&#x898B;&#x3048;&#x308B;</td>
+<td>&#x3014;&#x304F;&#x3060;&#x3051;&#x305F;&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x3067;&#x3015;(&#x2267;&#x25BD;&#x2266;)</td>
+</tr>
+</tbody>
+</table>
+<h1 id="&#x304A;&#x307E;&#x3051;">&#x304A;&#x307E;&#x3051;</h1>
+<p>&#x30BD;&#x30D5;&#x30C8;&#x30A6;&#x30A7;&#x30A2;&#x306E;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x7565;&#x8A9E;</th>
+<th>&#x5143;&#x306E;&#x8A9E;</th>
+<th>&#x610F;&#x5473;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LTS</td>
+<td>Long-term Support</td>
+<td>&#x9577;&#x671F;&#x30B5;&#x30DD;&#x30FC;&#x30C8;&#x5BFE;&#x8C61;&#x7248;</td>
+</tr>
+<tr>
+<td>GA</td>
+<td>General availability</td>
+<td>&#x4E00;&#x822C;&#x5411;&#x3051;&#x63D0;&#x4F9B;&#xFF1B;&#x6B63;&#x5F0F;&#x30EA;&#x30EA;&#x30FC;&#x30B9;&#x7248;</td>
+</tr>
+<tr>
+<td>GM</td>
+<td>Golden master</td>
+<td>&#xFF08;CD &#x30D7;&#x30EC;&#x30B9;&#x306E;&#xFF09;&#x539F;&#x76E4;&#xFF1B;&#x6B63;&#x5F0F;&#x30EA;&#x30EA;&#x30FC;&#x30B9;&#x7248;</td>
+</tr>
+<tr>
+<td>RTM</td>
+<td>Ready to manufacturing</td>
+<td>&#x91CF;&#x7523;&#x53EF;&#x80FD;&#xFF1B;&#x6B63;&#x5F0F;&#x30EA;&#x30EA;&#x30FC;&#x30B9;&#x7248;</td>
+</tr>
+<tr>
+<td>RC</td>
+<td>Release candidate</td>
+<td>&#x30EA;&#x30EA;&#x30FC;&#x30B9;&#x5019;&#x88DC;&#x7248;</td>
+</tr>
+<tr>
+<td>ES</td>
+<td>Engineering Sample</td>
+<td>&#x6A5F;&#x80FD;&#x8A55;&#x4FA1;&#x7248;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x6163;&#x7528;&#x8868;&#x73FE;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8A9E;</th>
+<th>&#x76F4;&#x8A33;</th>
+<th>&#x610F;&#x5473;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bikeshed, Bikeshedding</td>
+<td>&#x81EA;&#x8EE2;&#x8ECA;&#x7F6E;&#x304D;&#x5834;</td>
+<td>&#x91CD;&#x8981;&#x3067;&#x306A;&#x3044;&#x8B70;&#x8AD6;&#x306B;&#x6642;&#x9593;&#x3092;&#x53D6;&#x3089;&#x308C;&#x308B;&#x3053;&#x3068;&#xFF08;&#x5BB6;&#x306E;&#x30DA;&#x30F3;&#x30AD;&#x3092;&#x5857;&#x308A;&#x7D42;&#x3048;&#x308B;&#x524D;&#x306B;&#x81EA;&#x8EE2;&#x8ECA;&#x7F6E;&#x304D;&#x5834;&#x3092;&#x4F55;&#x8272;&#x3067;&#x5857;&#x308B;&#x304B;&#x63C9;&#x3081;&#x308B;&#x3053;&#x3068;&#x304B;&#x3089;&#xFF09;</td>
+</tr>
+<tr>
+<td>Yak shaving</td>
+<td>&#x30E4;&#x30AF;&#x306E;&#x6BDB;&#x5208;&#x308A;</td>
+<td>&#x3042;&#x308B;&#x5927;&#x304D;&#x306A;&#x554F;&#x984C;&#x3092;&#x89E3;&#x6C7A;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x3001; &#x4E00;&#x898B;&#x7121;&#x95A2;&#x4FC2;&#x306A;&#x5C0F;&#x3055;&#x3044;&#x554F;&#x984C;&#x3092;&#x3044;&#x304F;&#x3064;&#x3082;&#x7247;&#x4ED8;&#x3051;&#x308B;&#x3053;&#x3068;&#x3002;&#x8EE2;&#x3058;&#x3066;&#x3001;&#x5927;&#x304D;&#x306A;&#x554F;&#x984C;&#x3092;&#x89E3;&#x6C7A;&#x3059;&#x308B;&#x3064;&#x3082;&#x308A;&#x304C;&#x3001;&#x4E00;&#x898B;&#x95A2;&#x4FC2;&#x3057;&#x3066;&#x3044;&#x308B;&#x3088;&#x3046;&#x306B;&#x898B;&#x3048;&#x3066;&#x5B9F;&#x306F;&#x7121;&#x7528;&#x306A;&#x5C0F;&#x3055;&#x3044;&#x554F;&#x984C;&#x306B;&#x6C17;&#x3092;&#x53D6;&#x3089;&#x308C;&#x308B;&#x3053;&#x3068;&#xFF08;&#x9577;&#x304F;&#x56FA;&#x3044;&#x30E4;&#x30AF;&#x306E;&#x6BDB;&#x3092;&#x5208;&#x3063;&#x3066;&#x30A6;&#x30FC;&#x30EB;&#x306B;&#x3059;&#x308B;&#x306B;&#x306F;&#x591A;&#x304F;&#x306E;&#x4E0B;&#x6E96;&#x5099;&#x304C;&#x5FC5;&#x8981;&#x306A;&#x3053;&#x3068;&#x304B;&#x3089;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x3092;&#x66F8;&#x304F;">&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x3092;&#x66F8;&#x304F;</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Japanese</th>
+<th style="text-align:left">English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">A &#x3092;&#x5B9F;&#x88C5;&#x3057;&#x307E;&#x3057;&#x305F;</td>
+<td style="text-align:left">Implement A</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x6A5F;&#x80FD;(&#x30AF;&#x30E9;&#x30B9;)B &#x306B; A &#x3092;&#x5B9F;&#x88C5;&#x3057;&#x307E;&#x3057;&#x305F;</td>
+<td style="text-align:left">Add A to B</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x6A5F;&#x80FD;(&#x30AF;&#x30E9;&#x30B9;)B &#x306E; A &#x3092;&#x30EA;&#x30D5;&#x30A1;&#x30AF;&#x30BF;&#x30EA;&#x30F3;&#x30B0;&#x3057;&#x307E;&#x3057;&#x305F;</td>
+<td style="text-align:left">Refactor A in B</td>
+</tr>
+<tr>
+<td style="text-align:left">A &#x3092; B &#x304B;&#x3089; C &#x306B;&#x5909;&#x66F4;&#x3057;&#x307E;&#x3057;&#x305F;</td>
+<td style="text-align:left">Change A from B to C</td>
+</tr>
+<tr>
+<td style="text-align:left">A &#x3067;&#x306A;&#x304F; B &#x3092;&#x4F7F;&#x3046;&#x3088;&#x3046;&#x306B;&#x3057;&#x307E;&#x3057;&#x305F;</td>
+<td style="text-align:left">Replace A with B</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x6A5F;&#x80FD;(&#x30AF;&#x30E9;&#x30B9;)A &#x306E;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3057;&#x305F;</td>
+<td style="text-align:left">Add test for A</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x6A5F;&#x80FD;(&#x30AF;&#x30E9;&#x30B9;)A &#x306E;&#x5931;&#x6557;&#x3057;&#x3066;&#x3044;&#x305F;&#x30C6;&#x30B9;&#x30C8;&#x3092;&#x4FEE;&#x6B63;&#x3057;&#x307E;&#x3057;&#x305F;</td>
+<td style="text-align:left">Fix broken A tests</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x4F9D;&#x5B58;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA; A &#x3092;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3; x.y.z &#x306B;&#x4E0A;&#x3052;&#x307E;&#x3057;&#x305F;</td>
+<td style="text-align:left">Update A to x.y.z</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30D5;&#x30A1;&#x30A4;&#x30EB; A &#x4E2D;&#x306E;&#x8AA4;&#x5B57;&#x3092;&#x4FEE;&#x6B63;&#x3057;&#x307E;&#x3057;&#x305F;</td>
+<td style="text-align:left">Fix typo in A</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x301C;&#x306E;&#x3068;&#x304D;&#x301C;&#x3059;&#x308B;&#x30D0;&#x30B0;&#x3092;&#x4FEE;&#x6B63;&#x3057;&#x307E;&#x3057;&#x305F;</td>
+<td style="text-align:left">Fix the problem where &#x301C; when &#x301C;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x6A5F;&#x80FD;(&#x30AF;&#x30E9;&#x30B9;)A &#x306B;&#x3064;&#x3044;&#x3066;&#x3001;B &#x306B;&#x3082;&#x5BFE;&#x5FDC;&#x3057;&#x307E;&#x3057;&#x305F;</td>
+<td style="text-align:left">Support B in A</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8; A &#x306E; B &#x306B;&#x95A2;&#x3059;&#x308B;&#x8A18;&#x8FF0;&#x3092;&#x4FEE;&#x6B63;&#x3057;&#x307E;&#x3057;&#x305F;</td>
+<td style="text-align:left">Improve B in A</td>
+</tr>
+<tr>
+<td style="text-align:left">A &#x3067;&#x767A;&#x751F;&#x3059;&#x308B;&#x30A8;&#x30E9;&#x30FC;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x3092;&#x898B;&#x76F4;&#x3057;&#x307E;&#x3057;&#x305F;</td>
+<td style="text-align:left">Improve error message thrown in A</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3; x.y.z &#x3092;&#x30EA;&#x30EA;&#x30FC;&#x30B9;&#x3057;&#x307E;&#x3057;&#x305F;</td>
+<td style="text-align:left">Release x.y.z</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x672C;&#x5F53;&#x306F;&#x907F;&#x3051;&#x305F;&#x307B;&#x3046;&#x304C;&#x826F;&#x3044;&#x304C;&#x3001;&#x7D30;&#x304B;&#x3044;&#x4FEE;&#x6B63;&#x3092;&#x307E;&#x3068;&#x3081;&#x3066;&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x3059;&#x308B;&#x3068;&#x304D;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x7528;&#x4F8B;">&#x672C;&#x5F53;&#x306F;&#x907F;&#x3051;&#x305F;&#x307B;&#x3046;&#x304C;&#x826F;&#x3044;&#x304C;&#x3001;&#x7D30;&#x304B;&#x3044;&#x4FEE;&#x6B63;&#x3092;&#x307E;&#x3068;&#x3081;&#x3066;&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x3059;&#x308B;&#x3068;&#x304D;&#x306E;&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x7528;&#x4F8B;</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Japanese</th>
+<th style="text-align:left">English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x4F9D;&#x5B58;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306E;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x3092;&#x8AF8;&#x3005;&#x66F4;&#x65B0;&#x3057;&#x307E;&#x3057;&#x305F;</td>
+<td style="text-align:left">Update dependencies</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x96D1;&#x591A;&#x306A;&#x30B3;&#x30FC;&#x30C9;&#x30D5;&#x30A9;&#x30FC;&#x30DE;&#x30C3;&#x30C8;&#x4FEE;&#x6B63;&#x30FB;&#x53EF;&#x8996;&#x6027;&#x306E;&#x4FEE;&#x6B63;&#x3092;&#x3057;&#x307E;&#x3057;&#x305F;</td>
+<td style="text-align:left">Polish</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30B3;&#x30F3;&#x30D1;&#x30A4;&#x30EB;&#x30FB;&#x9759;&#x7684;&#x89E3;&#x6790;&#x306E;&#x8B66;&#x544A;&#x3092;&#x51FA;&#x306A;&#x3044;&#x3088;&#x3046;&#x306B;&#x4FEE;&#x6B63;&#x3057;&#x307E;&#x3057;&#x305F;</td>
+<td style="text-align:left">Clean up</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x554F;&#x3044;&#x5408;&#x308F;&#x305B;&#x308B;">&#x554F;&#x3044;&#x5408;&#x308F;&#x305B;&#x308B;</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Japanese</th>
+<th style="text-align:left">English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x301C;&#x3059;&#x308B;&#x4E88;&#x5B9A;&#x306F;&#x3042;&#x308A;&#x307E;&#x3059;&#x304B;?</td>
+<td style="text-align:left">Do you have any plans to &#x301C; ?</td>
+</tr>
+<tr>
+<td style="text-align:left">(&#x3053;&#x306E;&#x30D7;&#x30ED;&#x30C0;&#x30AF;&#x30C8;&#x3092;&#x4F7F;&#x3063;&#x3066;)&#x301C;&#x3059;&#x308B;&#x3053;&#x3068;&#x306F;&#x3067;&#x304D;&#x307E;&#x3059;&#x304B;?</td>
+<td style="text-align:left">Is there any way</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x56DE;&#x907F;&#x7B56;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x304B;?</td>
+<td style="text-align:left">Is there a workaround?</td>
+</tr>
+<tr>
+<td style="text-align:left">&#xFF5E;&#x3057;&#x3066;&#x306A;&#x3044;&#x306E;&#x3063;&#x3066;&#x3001;&#x4F55;&#x304B;&#x7406;&#x7531;&#x3042;&#x308A;&#x307E;&#x3059;&#x304B;?</td>
+<td style="text-align:left">What is the reason for not &#xFF5E;?</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x8A2D;&#x5B9A;/&#x5B9F;&#x88C5;&#x4F8B;&#x304C;&#x307B;&#x3057;&#x3044;&#x3067;&#x3059;</td>
+<td style="text-align:left">Could you provide an example please?</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x3069;&#x3046;&#x305E;&#x3088;&#x308D;&#x3057;&#x304F;&#x304A;&#x9858;&#x3044;&#x3057;&#x307E;&#x3059;</td>
+<td style="text-align:left">Thanks in advance.</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x301C;&#x3059;&#x308B;&#x3068; NullPointerException &#x304C;&#x3067;&#x307E;&#x3059;</td>
+<td style="text-align:left">We get NPE when &#x301C;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x3053;&#x306E;&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;&#x3092;&#x65E5;&#x672C;&#x8A9E;&#x306B;&#x7FFB;&#x8A33;&#x3057;&#x3066;&#x3082;&#x3044;&#x3044;&#x3067;&#x3059;&#x304B;?</td>
+<td style="text-align:left">Can I translate the docs to Japanese?</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30AF;&#x30ED;&#x30FC;&#x30BA;&#x3057;&#x3061;&#x3083;&#x3063;&#x3066;&#x3044;&#x3044;&#x3067;&#x3059;&#x304B;?</td>
+<td style="text-align:left">Can I close this?</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3; x.y.z &#x3067;&#x3082;&#x3001;&#x307E;&#x3060;&#x3053;&#x306E;&#x30D0;&#x30B0;&#x6F70;&#x308C;&#x3066;&#x306A;&#x3044;&#x3067;&#x3059;</td>
+<td style="text-align:left">I still encounter this bug with x.y.z.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x554F;&#x5408;&#x305B;&#x306B;&#x7B54;&#x3048;&#x308B;">&#x554F;&#x5408;&#x305B;&#x306B;&#x7B54;&#x3048;&#x308B;</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Japanese</th>
+<th style="text-align:left">English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x518D;&#x73FE;&#x3067;&#x304D;&#x306A;&#x3044;&#x3067;&#x3059;&#x306D;&#x3047;&#x2026;</td>
+<td style="text-align:left">I&apos;m afraid I can&apos;t reproduce the error you&apos;re seeing.</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x3082;&#x3046;&#x3061;&#x3087;&#x3063;&#x3068;&#x60C5;&#x5831;&#x304F;&#x3060;&#x3055;&#x3044;</td>
+<td style="text-align:left">You&apos;ll need to provide a little more information than that.</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30B9;&#x30BF;&#x30C3;&#x30AF;&#x30C8;&#x30EC;&#x30FC;&#x30B9;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x304B;?</td>
+<td style="text-align:left">Could you provide a stack trace?</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x305D;&#x3053;&#x304C;&#x307E;&#x3055;&#x306B;&#x554F;&#x984C;&#x306A;&#x3093;&#x3067;&#x3059;</td>
+<td style="text-align:left">That&apos;s exactly the problem.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x304A;&#x793C;&#x3092;&#x3044;&#x3046;">&#x304A;&#x793C;&#x3092;&#x3044;&#x3046;</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Japanese</th>
+<th style="text-align:left">English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x3068;&#x3066;&#x3082;&#x52C9;&#x5F37;&#x306B;&#x306A;&#x308A;&#x307E;&#x3057;&#x305F;</td>
+<td style="text-align:left">I think I&apos;ve learned a lot.</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30AA;&#x30C3;&#x3001;&#x5206;&#x304B;&#x308A;&#x307E;&#x3057;&#x305F;!</td>
+<td style="text-align:left">I see now.</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x30D5;&#x30A3;&#x30FC;&#x30C9;&#x30D0;&#x30C3;&#x30AF;&#x3042;&#x308A;&#x304C;&#x3068;&#x3046;</td>
+<td style="text-align:left">Thanks for the feedback.</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x4F55;&#x304B;&#x4ED6;&#x306B;&#x3082;&#x3042;&#x308A;&#x307E;&#x3057;&#x305F;&#x3089;&#x3001;&#x3088;&#x308D;&#x3057;&#x304F;&#x304A;&#x9858;&#x3044;&#x3057;&#x307E;&#x3059;</td>
+<td style="text-align:left">You&apos;re more than welcome to contribute.</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x3082;&#x3057;&#x89E3;&#x6C7A;&#x3067;&#x304D;&#x305F;&#x3089;&#x3001;&#x30D7;&#x30EB;&#x30EA;&#x30AF;&#x9001;&#x3063;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;</td>
+<td style="text-align:left">If you are able to resolve this, we would encourage you to send a pull request.</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x3061;&#x3083;&#x3093;&#x3068;&#x52D5;&#x304D;&#x307E;&#x3057;&#x305F;!</td>
+<td style="text-align:left">It&apos;s working as expected.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x5F15;&#x7528;&#x5143;">&#x5F15;&#x7528;&#x5143;</h2>
+<ul>
+<li><a href="http://d.hatena.ne.jp/pyopyopyo/20070920" target="_blank">Changelog &#x306E;&#x305F;&#x3081;&#x306E;&#x82F1;&#x6587;&#x30C6;&#x30F3;&#x30D7;&#x30EC;&#x30FC;&#x30C8;&#x96C6; - &#x3074;&#x3087;&#x3074;&#x3087;&#x3074;&#x3087;&#xFF1F; - Linux &#x3068;&#x304B;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x306E;&#x899A;&#x3048;&#x66F8;&#x304D; -</a></li>
+<li><a href="http://linuxenglish.blog83.fc2.com/blog-entry-115.html" target="_blank">&#x8F9E;&#x66F8;&#x3067;&#x5F15;&#x3051;&#x306A;&#x3044;&#x6280;&#x8853;&#x82F1;&#x8A9E; ChangeLog &#x3067;&#x3088;&#x304F;&#x4F7F;&#x3046;&#x8868;&#x73FE;</a></li>
+<li><a href="http://blog.livedoor.jp/dankogai/archives/50963216.html" target="_blank">404 Blog Not Found:&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DE;&#x30FC;&#x3067;&#x306A;&#x304F;&#x3066;&#x3082;&#x308F;&#x304B;&#x308B; a &#x3068; the &#x306E;&#x9055;&#x3044;</a></li>
+<li><a href="http://finalvent.cocolog-nifty.com/fareastblog/2004/02/athe.html" target="_blank">a &#x3068; the &#x306E;&#x8A71;: &#x6975;&#x6771;&#x30D6;&#x30ED;&#x30B0;</a></li>
+<li><a href="https://speakerdeck.com/pwim/ying-yu-dekomitutowoshu-kou" target="_blank">&#x82F1;&#x8A9E;&#x3067;&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x3092;&#x66F8;&#x3053;&#x3046;</a></li>
+<li><a href="http://www.clear-code.com/blog/2012/2/21.html" target="_blank">&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x306E;&#x66F8;&#x304D;&#x65B9; - &#x30AF;&#x30AF;&#x30ED;&#x30B0;(2012-02-21)</a></li>
+<li><a href="http://www.clear-code.com/blog/2013/4/24.html" target="_blank">&#x308F;&#x304B;&#x308A;&#x3084;&#x3059;&#x3044;&#x30B3;&#x30DF;&#x30C3;&#x30C8;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x306E;&#x66F8;&#x304D;&#x65B9; - &#x30AF;&#x30AF;&#x30ED;&#x30B0;(2013-04-24)</a></li>
+<li><a href="http://soundsteps.jugem.jp/?eid=2387" target="_blank">&#x306A;&#x305C;&#x592A;&#x967D;&#x306F; Sun &#x3067;&#x306F;&#x306A;&#x3044;&#x304B;&#x3000;&#x56FA;&#x6709;&#x540D;&#x8A5E;&#x306B;&#x3082;&#x533A;&#x5225;&#x304C;&#x3042;&#x308B; | &#x3054;&#x304D;&#x3052;&#x3093;&#x3088;&#x3046;&#x30C1;&#x30E3;&#x30F3;&#x30CD;&#x30EB;</a></li>
+<li><p><a href="http://lang-8.com/300419/journals/63961979153871083784092209061940160075" target="_blank">&#x65E5;&#x672C;&#x4EBA;&#x305F;&#x3081;&#x300C;a&#x300D;&#x3068;&#x300C;the&#x300D;&#x306E;&#x9055;&#x3044; | &#x5916;&#x56FD;&#x8A9E;&#x3092;&#x5B66;&#x7FD2;&#x3059;&#x308B;&#x306A;&#x3089; Lang-8</a></p>
+</li>
+<li><p><a href="https://github.com/azu/awesome-commit-english" target="_blank">Awesome Commit English</a></p>
+</li>
+<li><a href="http://www.abbreviations.com/category/COMPUTING" target="_blank">Abbreviations.com - Computing Abbreviations</a></li>
+<li><a href="http://www.acronymfinder.com" target="_blank">Acronym Finder</a></li>
+<li><a href="https://qiita.com/kawasima/items/feac49a299213e2c8ba6" target="_blank">GitHub English Challenge Cheat Sheet</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"search":{"keywords":["github","commit","etc."]},"title":"GitHub で英語を使う","level":"1.3.1","depth":2,"next":{"title":"[javascript]","level":"1.4","depth":1,"ref":"","articles":[{"title":"package.jsonのバージョンをあげるtips","level":"1.4.1","depth":2,"path":"docs/javascript/library_version_up.md","ref":"docs/javascript/library_version_up.md","articles":[]}]},"previous":{"title":"[英語]","level":"1.3","depth":1,"ref":"","articles":[{"title":"GitHub で英語を使う","level":"1.3.1","depth":2,"path":"docs/english/git_commit.md","ref":"docs/english/git_commit.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","summary"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"summary":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"ja","gitbook":"*"},"file":{"path":"docs/english/git_commit.md","mtime":"2018-08-24T23:31:30.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-26T03:52:40.265Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
