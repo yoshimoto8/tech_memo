@@ -33,3 +33,20 @@ https://zverok.github.io/blog/2016-02-23-control-flow.html
 https://andycroll.com/ruby/extract-conditionals-into-well-named-methods/
 
 コントローラーを薄くして,モデルを厚くしべし
+
+#### Railsでやってしまいがちな保守性を下げてしまうコードとその解決策
+
+https://qiita.com/shunhikita/items/7fdb5d95c883e38c63fc
+
+#### 実務で学んだRailsのコーディングパターン
+
+https://qiita.com/yoshi_ksk/items/08ee0e4230893a770cce
+
+
+#### 中／大規模開発のためのRails設計パターン
+
+https://qiita.com/ktsujichan/items/2899d337ecbd90474c46
+
+#### Railsのファットモデル問題に対処する前に読んでほしい記事
+
+https://qiita.com/klriutsa/items/8d7381f437c225c64a5f
