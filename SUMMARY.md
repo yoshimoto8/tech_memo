@@ -19,6 +19,8 @@
         - [2.md](docs/Command/Gitbook/2.md)
     - [Github]()
         - [GitHubで使う用語集](docs/Command/Github/1.md)
+    - [Google]()
+        - [グーグルショートカットキー](docs/Command/Google/1.md)
     - [Heroku]()
     - [Rubymine]()
         - [エディタまとめ記事](docs/Command/Rubymine/rubymine.md)
