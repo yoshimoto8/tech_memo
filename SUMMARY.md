@@ -51,6 +51,7 @@
         - [モデルスペック](docs/Rails/rspec/model.md)
 - [Ruby]()
     - [Ruby文法](docs/Ruby/1.md)
+    - [クラスメソットとインスタンスメソットの違い](docs/Ruby/class_incetance_methos.md)
 - [SQL]()
 - [Tech_Term]()
     - [IT単語](docs/Tech_Term/tech_term1.md)
