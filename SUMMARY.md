@@ -34,6 +34,8 @@
     - [Flow_learn]()
         - [Union Typeを極める](docs/Flow/Flow_learn/union_type.md)
 - [JavaScript]()
+    - [coffeeScripts]()
+        - [テスト導入記事](docs/JavaScript/coffeeScripts/1.md)
     - [package.jsonのパッケージのバージョンをあげる](docs/JavaScript/library_version_up.md)
 - [Markdown]()
     - [マークダウン表](docs/Markdown/markdown2.md)
@@ -54,6 +56,6 @@
     - [クラスメソットとインスタンスメソットの違い](docs/Ruby/class_incetance_methos.md)
 - [SQL]()
 - [Tech_Term]()
-    - [IT単語](docs/Tech_Term/tech_term1.md)
+    - [IT 単語](docs/Tech_Term/tech_term1.md)
 
 ## scripts
